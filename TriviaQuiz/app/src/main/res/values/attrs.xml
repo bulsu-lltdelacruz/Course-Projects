@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="backgroundBase"  format="color" />
+    <attr name="cardSurface"     format="color" />
+    <attr name="cardSurfaceGreyed"     format="color" />
+    <attr name="textPrimary"     format="color" />
+    <attr name="textSubtitle"    format="color" />
+    <attr name="strokeColor"     format="color" />
+    <attr name="buttonPrimary"   format="color" />
+    <attr name="inputField"   format="color" />
+</resources>

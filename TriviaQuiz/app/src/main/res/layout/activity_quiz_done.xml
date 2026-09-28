@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:fillViewport="true">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="?attr/backgroundBase"
+    android:gravity="center"
+    android:padding="24dp">
+
+    <ImageView
+        android:id="@+id/ivTrophy"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="-40dp"
+        android:src="@drawable/ic_quiz_complete" />
+
+    <TextView
+        android:id="@+id/tvCongrats"
+        style="@style/Text.Heading1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Quiz Completed!" />
+    <TextView
+        android:id="@+id/tvFinalScore"
+        style="@style/Text.Subtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:text="You Scored 3 out of 5 (60%)" />
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="24dp"/>
+    <LinearLayout
+        style="@style/CardStyle.NoMargin"
+        android:backgroundTint="?attr/cardSurface"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="0dp"
+        android:orientation="vertical"
+        android:padding="0dp"
+        android:gravity="center">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginVertical="20dp"
+            android:orientation="horizontal">
+            <TextView
+                style="@style/TextStyle.Outside"
+                android:textColor="?attr/textPrimary"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Your Score" />
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/tvCoinsEarned"
+                    style="@style/Text.Heading1"
+                    android:textColor="@color/mediumOrangeTextHead"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textAlignment="textEnd"
+                    android:textSize="20sp"
+                    android:layout_marginEnd="3dp"
+                    android:text="+30" />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:padding="2dp"
+                    android:src="@drawable/ic_coin"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_marginHorizontal="20dp"
+            android:background="?attr/cardSurfaceGreyed"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginVertical="20dp"
+            android:orientation="horizontal">
+            <TextView
+                style="@style/TextStyle.Outside"
+                android:textColor="?attr/textPrimary"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Rank Progress" />
+                <TextView
+                    android:id="@+id/tvRankPointsEarned"
+                    style="@style/Text.Heading1"
+                    android:textColor="@color/successGreen"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textAlignment="textEnd"
+                    android:textSize="16sp"
+                    android:layout_marginEnd="3dp"
+                    android:text="+30 RP" />
+        </LinearLayout>
+        <TextView
+            android:id="@+id/tvRank"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bronze"
+            android:textColor="@color/strokeRankBronze"
+            android:textStyle="bold"
+            android:paddingVertical="8dp"
+            android:paddingHorizontal="16dp"
+            android:background="@drawable/bg_rank_novice"
+            android:drawableStart="@drawable/ic_trophy"
+            android:drawablePadding="5dp"
+            android:drawableTint="@color/strokeRankBronze"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginHorizontal="20dp"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/tvCurrentScore"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="12sp"
+                android:textColor="?attr/textPrimary"
+                android:text="355 Points"/>
+            <TextView
+                android:id="@+id/tvTotalScore"
+                android:textColor="?attr/textPrimary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:text="500 Points"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="8dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginHorizontal="20dp"
+            android:background="@drawable/loading_bar"
+            android:backgroundTint="@color/strokeGray"
+            android:orientation="horizontal">
+            <View
+                android:id="@+id/viewProgressBar"
+                android:layout_width="0dp"
+                android:layout_weight="0.7"
+                android:layout_height="match_parent"
+                android:background="@drawable/loading_bar"
+                android:backgroundTint="@color/colorAccent"/>
+            <View
+                android:id="@+id/viewProgressBarTotal"
+                android:layout_width="0dp"
+                android:layout_weight="0.3"
+                android:background="@drawable/loading_bar"
+                android:layout_height="match_parent"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="10dp"/>
+
+    <LinearLayout
+        android:id="@+id/btnPlayAgain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/CardStyle.NoMargin"
+        android:backgroundTint="@color/primaryRed"
+        android:layout_margin="0dp"
+        android:gravity="center_horizontal">
+        <TextView
+            android:textStyle="bold"
+            android:layout_margin="0dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:text="Play Again"
+            android:textColor="@color/surfaceWhite"
+            android:drawableStart="@drawable/ic_retry"
+            android:drawablePadding="15dp"/>
+    </LinearLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="10dp"/>
+
+    <LinearLayout
+        android:id="@+id/btnGoHome"
+        style="@style/CardStyle.NoMargin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="0dp"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="0dp"
+            android:layout_marginBottom="12dp"
+            android:drawableStart="@drawable/ic_home"
+            android:drawablePadding="15dp"
+            android:drawableTint="@color/textDark"
+            android:text="Back to Home"
+            android:textColor="@color/textDark"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</LinearLayout>
+</ScrollView>

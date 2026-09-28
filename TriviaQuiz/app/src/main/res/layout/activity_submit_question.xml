@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="?attr/backgroundBase"
+    android:fillViewport="true"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingHorizontal="24dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:paddingTop="-10dp"
+            android:layout_marginBottom="5dp"
+            android:paddingHorizontal="-12dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="100dp"
+                    android:layout_height="30dp">
+                    <ImageView
+                        android:id="@+id/btnBack"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:src="@drawable/ic_back"
+                        app:tint="?attr/textPrimary"/>
+                </LinearLayout>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text=""
+                    android:textColor="?attr/textPrimary"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+                <Space
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            style="@style/Text.Heading1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Submit a Question"
+            android:layout_marginStart="16dp"
+            android:layout_marginBottom="24dp"/>
+
+        <LinearLayout
+            style="@style/CardStyle"
+            android:backgroundTint="?attr/cardSurface"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Question"
+                android:textStyle="bold"
+                android:textColor="?attr/textSubtitle"
+                android:layout_marginBottom="8dp"/>
+            <EditText
+                android:id="@+id/etQuestion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter your question..."
+                android:inputType="textMultiLine"
+                android:minLines="2"
+                android:textColor="?attr/textPrimary"
+                android:textColorHint="?attr/textSubtitle"
+                android:backgroundTint="?attr/inputField"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Correct Answer"
+                android:textStyle="bold"
+                android:textColor="?attr/textSubtitle"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="8dp"/>
+            <EditText
+                android:id="@+id/etCorrectAnswer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="The correct answer"
+                android:textColor="?attr/textPrimary"
+                android:textColorHint="?attr/textSubtitle"
+                android:backgroundTint="?attr/inputField"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Wrong Answer 1"
+                android:textStyle="bold"
+                android:textColor="?attr/textSubtitle"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="8dp"/>
+            <EditText
+                android:id="@+id/etWrong1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Wrong answer 1"
+                android:textColor="?attr/textPrimary"
+                android:textColorHint="?attr/textSubtitle"
+                android:backgroundTint="?attr/inputField"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Wrong Answer 2"
+                android:textStyle="bold"
+                android:textColor="?attr/textSubtitle"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="8dp"/>
+            <EditText
+                android:id="@+id/etWrong2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Wrong answer 2"
+                android:textColor="?attr/textPrimary"
+                android:textColorHint="?attr/textSubtitle"
+                android:backgroundTint="?attr/inputField"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Wrong Answer 3"
+                android:textStyle="bold"
+                android:textColor="?attr/textSubtitle"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="8dp"/>
+            <EditText
+                android:id="@+id/etWrong3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Wrong answer 3"
+                android:textColor="?attr/textPrimary"
+                android:textColorHint="?attr/textSubtitle"
+                android:backgroundTint="?attr/inputField"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Difficulty"
+                android:textStyle="bold"
+                android:textColor="?attr/textSubtitle"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="8dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <Button
+                    android:id="@+id/btnDiffEasy"
+                    style="@style/ButtonStyle.Primary"
+                    android:layout_marginVertical="6dp"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="13sp"
+                    android:layout_marginEnd="4dp"
+                    android:backgroundTint="@color/easyGreenTextHead"
+                    android:text="Easy"/>
+                <Button
+                    android:id="@+id/btnDiffMedium"
+                    style="@style/ButtonStyle.Primary"
+                    android:layout_marginVertical="6dp"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="13sp"
+                    android:layout_marginHorizontal="4dp"
+                    android:backgroundTint="@color/mediumOrangeTextHead"
+                    android:text="Med"/>
+                <Button
+                    android:id="@+id/btnDiffHard"
+                    style="@style/ButtonStyle.Primary"
+                    android:layout_marginVertical="6dp"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="13sp"
+                    android:layout_marginStart="4dp"
+                    android:backgroundTint="@color/hardRedTextHead"
+                    android:text="Hard"/>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnSubmit"
+                style="@style/ButtonStyle.Primary"
+                android:backgroundTint="@color/primaryRed"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:layout_marginBottom="5dp"
+                android:text="Submit Question"/>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6366F1</color>
+    <color name="colorPrimaryDark">#4F46E5</color>
+    <color name="colorAccent">#FCD34D</color>
+    <color name="colorPurple">#6366F1</color>
+    <color name="colorBlueProfile">#4970D3</color>
+
+    <color name="backgroundBase">#F4F6F9</color>
+    <color name="surfaceWhite">#FFFFFF</color>
+
+    <color name="textDark">#111827</color>
+    <color name="textMuted">#6B7280</color>
+    <color name="greyedCard">#F8FAFC</color>
+
+    <color name="successGreen">#10B981</color>
+    <color name="errorRed">#EF4444</color>
+    <color name="primaryRed">#EE5F5F</color>
+    <color name="strokeGray">#E5E7EB</color>
+
+    <!--────────────-Ranks──────────────────-->
+    <color name="rankBronze">#FEF3C7</color>
+    <color name="strokeRankBronze">#B45309</color>
+
+    <color name="rankApprentice">#e9ecef</color>
+    <color name="strokeRankApprentice">#6c757d</color>
+
+    <color name="rankScholar">#ffea00</color>
+    <color name="strokeRankScholar">#ff7b00</color>
+
+    <color name="rankSage">#d8f3dc</color>
+    <color name="strokeRankSage">#2d6a4f</color>
+
+    <color name="rankMaster">#90e0ef</color><!--blue nd whiteshine-->
+    <color name="rankMasterGradient">#DAF3F8</color>
+    <color name="strokeRankMaster">#1157AF</color>
+
+    <color name="rankGenius">#D4C4FB</color><!--purple nd whiteshine-->
+    <color name="rankGeniusGradient">#E1D5FF</color>
+    <color name="strokeRankGenius">#4A33F6</color>
+
+    <color name="rankOracle">#90e0ef</color><!--purple nd blue-->
+    <color name="rankOracleGradient">#f3c4fb</color>
+    <color name="strokeRankOracle">#3F3FCC</color>
+    <color name="strokeRankGradient">#5a189a</color>
+
+    <!--────────────-Ranks──────────────────-->
+
+    <!-- ── Border Rings (Customize screen) ─────── -->
+    <color name="borderGold">#D4A520</color>
+    <color name="borderDiamond">#60C8D8</color>
+    <color name="borderFire">#E07040</color>
+    <!--difficulty-->
+    <color name="easyGreenTextHead">#059669</color>
+    <color name="mediumOrangeTextHead">#D97706</color>
+    <color name="hardRedTextHead">#E11D48</color>
+    <!--border color??-->
+    <color name="borderSpacer">#F1F5F9</color>
+    <color name="progressBar">#64748B</color>
+</resources>

@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--activity_select_difficulty-->
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:fillViewport="true">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical"
+        android:background="?attr/backgroundBase">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_marginBottom="5dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingHorizontal="16dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="100dp"
+                    android:layout_height="30dp">
+
+                    <ImageView
+                        android:id="@+id/btnBack"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:src="@drawable/ic_back"
+                        app:tint="?attr/textPrimary" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Difficulty"
+                    android:textColor="?attr/textPrimary"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <Space
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <LinearLayout
+                android:id="@+id/btnEasy"
+                style="@style/CardStyle.Easy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Easy"
+                android:orientation="horizontal"
+                android:layout_marginBottom="8dp">
+
+
+                <ImageView
+                    android:layout_marginStart="3dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_easy"/>
+                <LinearLayout
+                    android:layout_marginVertical="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginStart="15dp">
+                    <TextView
+                        style="@style/TextStyle.Outside"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Easy"
+                        android:textSize="20sp"
+                        android:textColor="@color/easyGreenTextHead"/>
+                    <TextView
+                        android:layout_marginTop="10dp"
+                        style="@style/TextStyle.Outside"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Perfect for warming up."
+                        android:textStyle="normal"
+                        android:textColor="@color/easyGreenTextHead"/>
+                    <LinearLayout
+                        android:layout_marginTop="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="0dp"
+                        android:orientation="horizontal">
+                        <TextView
+                            style="@style/CardStyle.Difficulty.Sub"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/easyGreenTextHead"
+                            android:text="+10 coins"/>
+                        <Space
+                            android:layout_width="10dp"
+                            android:layout_height="match_parent"/>
+                        <TextView
+                            style="@style/CardStyle.Difficulty.Sub"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/easyGreenTextHead"
+                            android:text="20s/ question"/>
+
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/btnMedium"
+                style="@style/CardStyle.Medium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Easy"
+                android:orientation="horizontal"
+                android:layout_marginBottom="8dp">
+                <ImageView
+                    android:layout_marginStart="3dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_medium"/>
+                <LinearLayout
+                    android:layout_marginVertical="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginStart="15dp">
+                    <TextView
+                        style="@style/TextStyle.Outside"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Medium"
+                        android:textSize="20sp"
+                        android:textColor="@color/mediumOrangeTextHead"/>
+                    <TextView
+                        android:layout_marginTop="10dp"
+                        style="@style/TextStyle.Outside"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="A solid challenge."
+                        android:textStyle="normal"
+                        android:textColor="@color/mediumOrangeTextHead"/>
+                    <LinearLayout
+                        android:layout_marginTop="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <TextView
+                            style="@style/CardStyle.Difficulty.Sub"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/mediumOrangeTextHead"
+                            android:text="+15 coins"/>
+                        <Space
+                            android:layout_width="10dp"
+                            android:layout_height="match_parent"/>
+                        <TextView
+                            style="@style/CardStyle.Difficulty.Sub"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/mediumOrangeTextHead"
+                            android:layout_marginStart="12dp"
+                            android:text="15s/ question"/>
+
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/btnHard"
+                style="@style/CardStyle.Hard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Easy"
+                android:orientation="horizontal"
+                android:layout_marginBottom="8dp">
+                <ImageView
+                    android:layout_marginStart="3dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_hard"/>
+                <LinearLayout
+                    android:layout_marginVertical="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginStart="15dp">
+                    <TextView
+                        style="@style/TextStyle.Outside"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Hard"
+                        android:textSize="20sp"
+                        android:textColor="@color/hardRedTextHead"/>
+                    <TextView
+                        android:layout_marginTop="10dp"
+                        style="@style/TextStyle.Outside"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Only for true masters."
+                        android:textStyle="normal"
+                        android:textColor="@color/hardRedTextHead"/>
+                    <LinearLayout
+                        android:layout_marginTop="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <TextView
+                            style="@style/CardStyle.Difficulty.Sub"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/hardRedTextHead"
+                            android:text="+20 coins"/>
+                        <Space
+                            android:layout_width="10dp"
+                            android:layout_height="match_parent"/>
+                        <TextView
+                            style="@style/CardStyle.Difficulty.Sub"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/hardRedTextHead"
+                            android:layout_marginStart="12dp"
+                            android:text="10s/ question"/>
+
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

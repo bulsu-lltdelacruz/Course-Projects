@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "523045829734",
+    "project_id": "trivia-quiz-86978",
+    "storage_bucket": "trivia-quiz-86978.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:523045829734:android:9cf8880a36665b176381a7",
+        "android_client_info": {
+          "package_name": "com.example.triviaquiz"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCMMkjgSU45tfmJV1ebhVz18CWrP5qPVHE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

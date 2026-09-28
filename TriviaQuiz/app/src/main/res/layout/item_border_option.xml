@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- item_border_option.xml — Border style option (Gold / Diamond / Fire) -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="5dp">
+
+    <FrameLayout
+        android:id="@+id/borderCard"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@drawable/bg_option_card_unselected"
+        android:paddingTop="14dp"
+        android:paddingBottom="14dp">
+
+        <!-- Hidden check dot (shown when selected programmatically) -->
+        <View
+            android:id="@+id/checkDot"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_gravity="top|end"
+            android:layout_margin="-4dp"
+            android:background="@drawable/bg_check_dot"
+            android:visibility="gone" />
+
+        <!-- Ring + Lock inner box -->
+        <FrameLayout
+            android:id="@+id/ringFrame"
+            android:layout_width="52dp"
+            android:layout_height="52dp"
+            android:layout_gravity="center">
+
+            <!-- Colored ring — tint is set programmatically to gold/diamond/fire -->
+            <ImageView
+                android:id="@+id/borderRing"
+                android:layout_width="52dp"
+                android:layout_height="52dp"
+                android:src="@drawable/bg_border_ring"
+                android:contentDescription="Border ring" />
+
+            <!-- Inner card with lock icon -->
+            <FrameLayout
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:layout_gravity="center"
+                android:background="@drawable/bg_option_card_unselected">
+
+                <ImageView
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_lock"
+                    android:contentDescription="Locked border" />
+
+            </FrameLayout>
+
+        </FrameLayout>
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/borderLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gold"
+        android:textSize="11sp"
+        android:textColor="@color/textMuted"
+        android:fontFamily="sans-serif-medium"
+        android:layout_marginTop="6dp" />
+
+</LinearLayout>

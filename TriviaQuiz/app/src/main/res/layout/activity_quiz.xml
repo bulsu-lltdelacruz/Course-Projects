@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:fillViewport="true">
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/backgroundBase">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:id="@+id/tvQuestionProgress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_card_white"
+                android:backgroundTint="?attr/cardSurface"
+                android:paddingHorizontal="16dp"
+                android:paddingVertical="8dp"
+                android:text="Question 1 / 5"
+                android:textStyle="bold"
+                android:textColor="?attr/textPrimary"/>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="8dp"
+            android:layout_marginBottom="32dp"
+            android:background="@drawable/loading_bar"
+            android:backgroundTint="@color/strokeGray"
+            android:orientation="horizontal">
+            <View
+                android:id="@+id/viewProgressBar"
+                android:layout_width="0dp"
+                android:layout_weight="0"
+                android:layout_height="match_parent"
+                android:background="@drawable/loading_bar"
+                android:backgroundTint="@color/successGreen"/>
+            <View
+                android:id="@+id/viewProgressBarTotal"
+                android:layout_width="0dp"
+                android:layout_weight="0"
+                android:background="@drawable/loading_bar"
+                android:layout_height="match_parent"/>
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/CardStyle"
+            android:backgroundTint="?attr/cardSurface"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="0dp"
+            android:minHeight="150dp"
+            android:gravity="center"
+            android:layout_marginBottom="32dp">
+
+            <TextView
+                android:id="@+id/tvQuestionText"
+                style="@style/Text.Heading1"
+                android:textSize="18sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Who painted the Mona Lisa?" />
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"/>
+                <LinearLayout
+                    android:id="@+id/btnOptionA"
+                    style="@style/CardStyle.NoMargin"
+                    android:backgroundTint="?attr/cardSurface"
+                    android:layout_margin="0dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="16dp">
+                    <TextView
+                        android:textStyle="bold"
+                        android:textSize="16sp"
+                        android:background="@drawable/circle_image"
+                        android:backgroundTint="@color/greyedCard"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:gravity="center"
+                        android:text="A"/>
+                    <TextView
+                        style="@style/TextStyle.Outside"
+                        android:layout_marginStart="15dp"
+                        android:textSize="14sp"
+                        android:paddingVertical="7dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="start"
+                        android:text="Vincent van Gogh"/>
+                </LinearLayout>
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="7dp"/>
+
+                <LinearLayout
+                    android:id="@+id/btnOptionB"
+                    style="@style/CardStyle.NoMargin"
+                    android:backgroundTint="?attr/cardSurface"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="0dp"
+                    android:orientation="horizontal"
+                    android:padding="16dp">
+                    <TextView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:background="@drawable/circle_image"
+                        android:backgroundTint="@color/greyedCard"
+                        android:gravity="center"
+                        android:text="B"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+                    <TextView
+                        style="@style/TextStyle.Outside"
+                        android:layout_marginStart="15dp"
+                        android:textSize="14sp"
+                        android:paddingVertical="7dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="start"
+                        android:text="Vincent van Gogh"/>
+                </LinearLayout>
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="7dp"/>
+                <LinearLayout
+                    android:id="@+id/btnOptionC"
+                    android:backgroundTint="?attr/cardSurface"
+                    style="@style/CardStyle.NoMargin"
+                    android:layout_margin="0dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="16dp">
+                    <TextView
+                        android:textStyle="bold"
+                        android:textSize="16sp"
+                        android:background="@drawable/circle_image"
+                        android:backgroundTint="@color/greyedCard"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:gravity="center"
+                        android:text="C"/>
+                    <TextView
+                        style="@style/TextStyle.Outside"
+                        android:layout_marginStart="15dp"
+                        android:textSize="14sp"
+                        android:paddingVertical="7dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="start"
+                        android:text="Vincent van Gogh"/>
+                </LinearLayout>
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="7dp"/>
+                <LinearLayout
+                    android:id="@+id/btnOptionD"
+                    style="@style/CardStyle.NoMargin"
+                    android:backgroundTint="?attr/cardSurface"
+                    android:layout_margin="0dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="16dp">
+                    <TextView
+                        android:textStyle="bold"
+                        android:textSize="16sp"
+                        android:background="@drawable/circle_image"
+                        android:backgroundTint="@color/greyedCard"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:gravity="center"
+                        android:text="D"/>
+                    <TextView
+                        style="@style/TextStyle.Outside"
+                        android:layout_marginStart="15dp"
+                        android:textSize="14sp"
+                        android:paddingVertical="7dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="start"
+                        android:text="Vincent van Gogh"/>
+                </LinearLayout>
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"/>
+                <LinearLayout
+                    android:id="@+id/btnNextQuestion"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/CardStyle.NoMargin"
+                    android:backgroundTint="@color/primaryRed"
+                    android:layout_margin="0dp"
+                    android:gravity="center_horizontal">
+                    <TextView
+                        android:textStyle="bold"
+                        android:layout_margin="0dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="12dp"
+                        android:text="Next Question"
+                        android:textColor="@color/surfaceWhite"/>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+    <FrameLayout
+        android:id="@+id/loadingOverlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="?attr/backgroundBase"
+        android:visibility="gone">
+
+        <ProgressBar
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            android:indeterminate="true" />
+
+    </FrameLayout>
+
+</FrameLayout>
+</ScrollView>

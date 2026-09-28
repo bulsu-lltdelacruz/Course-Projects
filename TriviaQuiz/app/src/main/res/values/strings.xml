@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Trivia Quiz</string>
+    <string name="rank_novice">Novice</string>
+    <string name="rank_apprentice">Apprentice</string>
+    <string name="rank_scholar">Scholar</string>
+    <string name="rank_sage">Sage</string>
+    <string name="rank_master">Master</string>
+    <string name="rank_genius">Genius</string>
+    <string name="rank_oracle">Oracle</string>
+</resources>

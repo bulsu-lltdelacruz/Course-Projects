@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+<item
+    android:left="2dp"
+    android:top="2dp">
+    <shape
+        android:shape="oval">
+        <solid android:color="#1A000000" /> <!-- Adjust alpha for shadow darkness -->
+        <corners android:radius="16dp" />
+    </shape>
+</item>
+<item>
+    <shape
+        android:shape="oval">
+        <solid android:color="@color/surfaceWhite" /> <!-- Replace with your color -->
+        <!--<size
+            android:width="100dp"
+            android:height="100dp"/>--> <!-- Keep width/height equal for a circle -->
+    </shape>
+</item>
+</layer-list>

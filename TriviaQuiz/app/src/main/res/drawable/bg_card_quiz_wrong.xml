@@ -1,0 +1,19 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:left="2dp"
+        android:top="2dp">
+        <shape>
+            <solid android:color="#1A626262" /> <!-- Adjust alpha for shadow darkness -->
+            <corners android:radius="16dp" />
+        </shape>
+    </item>
+    <item
+        android:bottom="2dp"
+        android:right="2dp">
+        <shape>
+            <solid android:color="#FFF1F2" />
+            <corners android:radius="16dp" />
+            <stroke android:width="3dp" android:color="#F43F5E" />
+        </shape>
+    </item>
+</layer-list>
