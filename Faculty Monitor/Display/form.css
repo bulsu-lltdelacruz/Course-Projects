@@ -1,0 +1,129 @@
+
+    :root{
+      --bg:#f7f9fc; --card:#ffffff; --accent:#6a5af9; --muted:#6b7280; --today:#fde68a;
+    }
+    .form-group {
+        display: flex;
+        flex-direction: column;
+    }
+    .form-group input, .form-group select{
+        height: 30px;
+        border-radius: 8px;
+        border-width: 1px;
+        padding-left: 10px;
+    }
+    .form-div{
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        justify-self: center;
+        align-self: center;
+        z-index: 901;
+    }
+    #close-div{
+        display: flex; 
+        flex-direction: row;
+        justify-content: right;
+    }
+    .form-div form{
+        width: 100%;
+        display: flex;
+        flex-direction: row ;
+        flex-direction: row;
+        justify-content: center;
+        align-self: center;
+    }
+    .selection-group{
+        display: flex;
+        flex-direction: row;
+    }
+    .selection-group select, .selection-group input{
+        width: 48.5%;
+    }
+    .selection-group select:last-child, .selection-group input:last-child {
+        margin-left: 3%;
+    }
+    .form-div{
+        background-color: white;
+        display: none;
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        align-self: center;
+        margin: auto;
+        padding: 15px;
+        border-radius:16px;
+        box-shadow:0 8px 24px rgba(15,23,42,0.08);
+    }
+    .form-div label{
+        margin-block-start: 8px;
+        margin-block-end: 3px;
+    }
+    .submit-btn{
+        background-color: var(--accent);
+        color: var(--card);
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+    }
+    .day-selection{
+        position: fixed;
+        display: flex;
+        margin-left: auto;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        background-color: var(--card);
+        border: 0.5px solid var(--muted);
+        padding: 10px;
+        box-shadow:0 8px 24px rgba(15,23,42,0.08);
+    }
+    .day-selection input{
+        margin: auto;
+        width: 15px;
+        height: 15px;
+    }
+    .day-selection label{
+        margin: auto;
+        text-align: center;
+        font-size: 14px;
+        margin-left: 5px;
+        margin-right: 20px;
+    }
+    .day-selection label:last-child{
+        margin-right: 0px;
+    }.top{
+        width: 100%;
+    }
+    .left-side, .right-side{
+        flex-grow: 1;
+    }
+    .left-side{
+        margin-right: 20px;
+    }
+    #submission-group{
+        display: flex;
+        flex-direction: row;
+        margin-block-start: 20px;
+        margin-block-end: 20px;
+    }
+    #submit-form, #submit-form-edit, #close-form, #close-form-edit{
+        font-size: 15px;
+        padding: 10px;
+        height: 40px;
+        font-weight: 400;
+    }
+    #close-form{
+        margin-left: 15px;
+        background-color: transparent;
+        color: black;
+    }
+    #close-form-edit{
+        margin-left: 15px;
+        background-color: transparent;
+        color: black;
+    }
+    .top{
+        margin-top: 15px;
+    }
