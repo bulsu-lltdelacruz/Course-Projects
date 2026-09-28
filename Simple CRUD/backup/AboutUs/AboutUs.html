@@ -1,0 +1,212 @@
+<style>
+    .infoDiv > *{
+        box-sizing: border-box;
+        font-family: 'Franklin Gothic';
+        margin: 0;
+    }
+    b{
+        font-weight: 500;
+    }
+    body{
+        background-color: #ebebeb;
+        background-image: url(/Profile/images/Arcane.S01E04.Happy.Progress.Day01.42.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        overflow-x: hidden;
+    }
+    #parentDiv{
+        position: relative;
+        width: 100%;
+        height: 200%;
+    }
+    .infoDiv{
+        display: flex;
+        align-items: center;
+        position: relative;
+        float: left;
+        /*border-block: 1px groove black;*/
+        margin-inline: 7.5%;
+        margin-block: 20px;
+        width: 85%;
+        height: 300px;
+        background-color: white;
+    }
+    #info{
+        width: 55%;
+        height: 100%;
+    }
+    .imageDiv{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #313131;
+        width: 45%;
+        height: 300px;
+    }
+    .infoDiv ul{
+        position: relative;
+        left: 0;
+        font-size: 18;
+        margin-block: 10%;
+        margin-inline-start: 10%;
+    }
+   /* .infoList{
+        position: relative;
+        margin-inline: 20%;
+        width: 100%;
+        font-size: 18;
+    }*/
+    #leo{
+        margin-top: 60px;
+    }
+    .image{
+        position: absolute;
+        margin-left: 25px;
+        background-color: whitesmoke;
+        aspect-ratio: 1/1;
+        width: 200px;
+        border-radius: 5%;
+    }
+
+    
+</style>
+<html>
+    <title>AboutUs</title>
+    <head>
+        <link rel="stylesheet" href="/navigBarStyle.css">
+    </head>
+    <body>
+
+        <div id="navOffset">
+            <h2 id="titleHeader">
+                My Website
+            </h2>
+            <img id="logoImg" src="/images/MyLogo.jpg" alt="">
+            <ul id="loginNav">
+                <li>
+                    <a  style="" href=""> 
+                        <img id="accLogo" src="/images/AccountLogo.png"  style="color: white;"></img>
+                    </a>
+                    <div class="arrowUp"></div>
+                    <ul style="z-index: 2;">
+                        <li>
+                            <a href="/Profile/CreateUser.html">Login</a>
+                        </li>
+                        <li>
+                            <a href="/index.html">LogOut</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <div id="parentDiv" >
+            <div id="navContainer" style="background-color: purple; height: 200px; overflow-y: scroll;">
+                <div style="height: 1000;">
+                    <ul  id="navBar" style="width: 101%;" class="navUl">
+                        <li class="mainList"><a href="/Profile/Home.html">Home</a></li>
+                        <li class="mainList"><a href="">News</a></li>
+                        <li class="mainList"><a href="">Announcement</a></li>
+                        <li class="mainList"><a href="/AboutUs/AboutUs.html">About Us</a></li>
+                        <li class="mainList"><a href="/ContactUs/ContactUs.html" >Contact Us</a></li>
+                        <li class="mainList"  id="settings"><a href="">Settings</a>
+                            <ul class="navUl subNavUL" id="sub1">
+                                <li><a style="margin-top: 5000px;" href="">User</a>
+                                    <ul class="navUl" id="sub2">
+                                        <li><a href="/Lists/List_Profile.html">Profile</a></li>
+                                        <li><div class="ayusin"><a  href="/Lists/List_Schedule.html">Schedule</a></div></li>
+                                        <li><div class="ayusin"><a  href="/Lists/List_User.html">Accounts</a></div></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+               
+            </div>
+                
+            
+            <div class="infoDiv" id="leo">
+                <div class="imageDiv">
+                    <img src="/imagess/Leo.jpg" class="image">
+                </div>
+                <div id="info">
+                    <ul>
+                        <li class="infoList"><b>Phone Number</b> : 0966-709-9184</li>
+                        <li class="infoList"><b>Email Address</b> : leolorenzodelacruz26@gmail.com</li>
+                        <li class="infoList"><b>Birthday</b> : September 26, 2005</li>
+                        <li class="infoList"><b>Student Number</b> : 2023104213</li>
+                        <li class="infoList"><b>Gender</b> : Male</li>
+                        <li class="infoList"><b>Age</b> : 19</li>
+                    </ul>
+                </div>
+                
+            </div>
+            <div class="infoDiv" id="jomar">
+                <div class="imageDiv">
+                    <img src="/imagess/Jomar.jpg" class="image">
+                </div>
+                <div id="info">
+                    <ul>
+                        <li class="infoList"><b>Phone Number</b> : 0938-746-8532</li>
+                        <li class="infoList"><b>Email Address</b> : jomarbmendoza8@gmail.com</li>
+                        <li class="infoList"><b>Birthday</b> : August 18, 2004</li>
+                        <li class="infoList"><b>Student Number</b> : 2023104242</li>
+                        <li class="infoList"><b>Gender</b> : Male</li>
+                        <li class="infoList"><b>Age</b> : 20</li>
+                    </ul>
+                </div>
+                
+            </div>
+            <div class="infoDiv" id="limuel">
+                <div class="imageDiv">
+                    <img src="/imagess/Limuel.jpg" class="image">
+                </div>
+                <div id="info">
+                    <ul>
+                        <li class="infoList"><b>Phone Number</b> : 0936-382-2369</li>
+                        <li class="infoList"><b>Email Address</b> : limuelmartincamangon@gmail.com</li>
+                        <li class="infoList"><b>Birthday</b> : May 15, 2005</li>
+                        <li class="infoList"><b>Student Number</b> : 2023104078</li>
+                        <li class="infoList"><b>Gender</b> : Male</li>
+                        <li class="infoList"><b>Age</b> : 19</li>
+                    </ul>
+                </div>
+
+            </div>
+            <div class="infoDiv" id="jade">
+                <div class="imageDiv">
+                    <img src="/imagess/Jade.jpg" class="image">
+                </div>
+                <div id="info">
+                    <ul>
+                        <li class="infoList"><b>Phone Number</b> : 0962-619-2466</li>
+                        <li class="infoList"><b>Email Address</b> : johnjade.cabrera16@gmail.com</li>
+                        <li class="infoList"><b>Birthday</b> : March 6, 2005</li>
+                        <li class="infoList"><b>Student Number</b> : 2017100112</li>
+                        <li class="infoList"><b>Gender</b> : Male</li>
+                        <li class="infoList"><b>Age</b> : 19</li>
+                    </ul>
+                </div>
+
+            </div>
+            <div class="infoDiv" id="christian">
+                <div class="imageDiv">
+                    <img src="/imagess/Christian.jpg" class="image">
+                </div>
+                <div id="info">
+                    <ul>
+                        <li class="infoList"><b>Phone Number</b> : 0966-728-5237</li>
+                        <li class="infoList"><b>Email Address</b> : Chrstn.adrian37@gmail.com</li>
+                        <li class="infoList"><b>Birthday</b> : March 7, 2005</li>
+                        <li class="infoList"><b>Student Number</b> : 2023104199</li>
+                        <li class="infoList"><b>Gender</b> : Male</li>
+                        <li class="infoList"><b>Age</b> : 19</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </body>
+</html>

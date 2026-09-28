@@ -1,0 +1,65 @@
+:root {
+}
+
+.save-slot {
+    width: auto;
+    height: auto;
+    background-color: rgb(28, 28, 29);
+    min-width: 100px;
+    min-height: auto;
+    justify-content: space-between;
+    align-items: stretch;
+    align-self: auto;
+    align-content: flex-start;
+    margin-top: 20px;
+    margin-bottom: 0;
+    padding-left: 40px;
+    border-top-width: 1px;
+    border-right-width: 1px;
+    border-bottom-width: 1px;
+    border-left-width: 1px;
+    -unity-font-definition: url("project://database/Assets/Fonts/Montserrat-SemiBold.ttf?fileID=12800000&guid=39c8e013ef61ee04e85b7bb342aa5b8e&type=3#Montserrat-SemiBold");
+}
+
+.save-location {
+    font-size: 45px;
+    margin-top: 20px;
+    color: rgb(217, 217, 217);
+    -unity-text-outline-color: rgb(27, 27, 27);
+    -unity-font-definition: url("project://database/Assets/Fonts/Montserrat-SemiBold.ttf?fileID=12800000&guid=39c8e013ef61ee04e85b7bb342aa5b8e&type=3#Montserrat-SemiBold");
+    -unity-font-style: bold;
+}
+
+.save-time {
+    font-size: 38px;
+    margin-bottom: 20px;
+    color: rgb(217, 217, 217);
+    -unity-font-definition: url("project://database/Assets/Fonts/Montserrat-SemiBold.ttf?fileID=12800000&guid=39c8e013ef61ee04e85b7bb342aa5b8e&type=3#Montserrat-SemiBold");
+    -unity-font-style: italic;
+}
+
+.empty-save-slot {
+    width: auto;
+    height: auto;
+    background-color: rgb(84, 84, 84);
+    min-width: 100px;
+    min-height: auto;
+    justify-content: space-between;
+    align-items: stretch;
+    align-self: auto;
+    align-content: flex-start;
+    margin-top: 20px;
+    margin-bottom: 0;
+    padding-left: 40px;
+    opacity: 0.2;
+    background-image: none;
+    border-top-width: 1px;
+    border-right-width: 1px;
+    border-bottom-width: 1px;
+    border-left-width: 1px;
+    border-left-color: rgb(255, 255, 255);
+    border-right-color: rgb(255, 255, 255);
+    border-top-color: rgb(255, 255, 255);
+    border-bottom-color: rgb(255, 255, 255);
+    -unity-font-definition: url("project://database/Assets/Fonts/Montserrat-SemiBold.ttf?fileID=12800000&guid=39c8e013ef61ee04e85b7bb342aa5b8e&type=3#Montserrat-SemiBold");
+}

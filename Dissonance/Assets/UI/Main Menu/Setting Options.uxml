@@ -1,0 +1,64 @@
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI/Main%20Menu/MainMenu.uss?fileID=7433441132597879392&amp;guid=2e30af61cbc14b84499ccae636d1f871&amp;type=3#MainMenu"/>
+    <ui:VisualElement name="setting-parent" style="flex-grow: 1; background-image: none; background-color: rgb(17, 17, 19); -unity-background-image-tint-color: rgb(38, 38, 38); display: none;">
+        <ui:VisualElement name="menu-buttons-parent" style="flex-grow: 1; white-space: normal; flex-direction: row; height: auto; aspect-ratio: auto;">
+            <ui:VisualElement name="menu-buttons" style="flex-grow: 1; flex-direction: column; align-self: center; justify-content: center; margin-top: 0; height: 100%;">
+                <ui:Button text="Sound" name="sound" class="menu-button text-font" style="padding-top: 40px; padding-bottom: 40px;"/>
+                <ui:Button text="Controls" name="controls" class="menu-button text-font"/>
+                <ui:Button text="Return" name="return" class="menu-button text-font" style="padding-top: 40px; padding-bottom: 40px;"/>
+                <ui:Button text="Return to Main Menu" name="return-to-menu" class="menu-button text-font" style="padding-top: 40px; padding-bottom: 40px; display: none;"/>
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement name="filter" enabled="false" class="crt" style="flex-grow: 1; background-image: url(&quot;project://database/Assets/Render_Textures/UI/horizontal-stripe.jpg?fileID=2800000&amp;guid=1244da132199ebe4698c46a9327c2f57&amp;type=3#horizontal-stripe&quot;); position: absolute; background-color: rgba(0, 0, 0, 0); top: 0; left: 0; right: 0; bottom: 0; -unity-background-image-tint-color: rgb(111, 111, 111); opacity: 0.01; width: 100%; height: 100%;"/>
+    </ui:VisualElement>
+    <ui:VisualElement name="setting-sound-parent" style="flex-grow: 1; background-image: url(&quot;project://database/Assets/Render_Textures/PickUpItem/RADIONOCASSETTE.png?fileID=2800000&amp;guid=a4ac4c1d67df8de47bc18a9a1b022fcc&amp;type=3#RADIONOCASSETTE&quot;); background-color: rgb(17, 17, 19); -unity-background-image-tint-color: rgb(38, 38, 38); display: none;">
+        <ui:VisualElement name="sound-menu-buttons-parent" style="flex-grow: 1; white-space: normal; flex-direction: row; height: auto; aspect-ratio: auto;">
+            <ui:VisualElement name="sound-menu-buttons" style="flex-grow: 1; flex-direction: column; align-self: center; justify-content: center; margin-top: 0; height: 100%; padding-left: 330px; padding-right: 330px;">
+                <ui:Slider label="Master" value="42" high-value="1" show-input-field="false" fill="true" inverted="false" name="master-slider" class="slider" style="flex-direction: column;"/>
+                <ui:Slider label="Sound FX" value="42" high-value="1" show-input-field="false" fill="true" inverted="false" name="soundFX-slider" class="slider" style="flex-direction: column;"/>
+                <ui:Slider label="Music" value="42" high-value="1" show-input-field="false" fill="true" inverted="false" name="music-slider" class="slider" style="flex-direction: column;"/>
+                <ui:Slider label="Menu" value="42" high-value="1" show-input-field="false" fill="true" inverted="false" name="menu-slider" class="slider" style="flex-direction: column; display: flex;"/>
+                <ui:Button text="Return" name="return-sound" emoji-fallback-support="false" class="menu-button text-font" style="padding-top: 40px; padding-bottom: 40px; align-self: flex-end; margin-left: 130px; margin-top: 30px; margin-right: 21px; margin-bottom: 2px;"/>
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement name="filter" enabled="false" class="crt" style="flex-grow: 1; background-image: url(&quot;project://database/Assets/Render_Textures/UI/horizontal-stripe.jpg?fileID=2800000&amp;guid=1244da132199ebe4698c46a9327c2f57&amp;type=3#horizontal-stripe&quot;); position: absolute; background-color: rgba(0, 0, 0, 0); top: 0; left: 0; right: 0; bottom: 0; -unity-background-image-tint-color: rgb(111, 111, 111); opacity: 0.01; width: 100%; height: 100%;"/>
+    </ui:VisualElement>
+    <ui:VisualElement name="setting-controls-parent" style="flex-grow: 1; background-image: url(&quot;project://database/Assets/Render_Textures/PickUpItem/RADIONOCASSETTE.png?fileID=2800000&amp;guid=a4ac4c1d67df8de47bc18a9a1b022fcc&amp;type=3#RADIONOCASSETTE&quot;); background-color: rgb(17, 17, 19); -unity-background-image-tint-color: rgb(38, 38, 38); display: none;">
+        <ui:VisualElement name="controls-parent" style="flex-grow: 1; white-space: normal; flex-direction: row; height: auto; aspect-ratio: auto; justify-content: space-around; align-items: center;">
+            <ui:ScrollView style="justify-content: flex-start; align-items: flex-start; align-self: center; align-content: stretch; flex-direction: column;">
+                <ui:VisualElement class="control-label-parent" style="flex-grow: 1; justify-content: flex-start; align-self: stretch; align-content: flex-start; align-items: auto; flex-direction: column; border-bottom-width: 0;">
+                    <ui:VisualElement name="control-label-parent" class="control-label-parent" style="flex-grow: 1;">
+                        <ui:Label text="Move" name="Label" class="text-font menu-button controls-label" style="-unity-text-align: upper-left; margin-right: 0; margin-top: 0; margin-bottom: 0; margin-left: 0; width: 40%;"/>
+                        <ui:Label text="[W][A][S][D]" name="Label" class="text-font menu-button controls-label control-label-last" style="margin-right: 0; margin-top: 0; margin-bottom: 0; margin-left: 0; width: 60%;"/>
+                    </ui:VisualElement>
+                    <ui:VisualElement name="control-label-parent" class="control-label-parent" style="flex-grow: 1;">
+                        <ui:Label text="Interact" name="Label" class="text-font menu-button controls-label" style="-unity-text-align: upper-left; margin-right: 0; margin-top: 0; margin-bottom: 0; margin-left: 0;"/>
+                        <ui:Label text="[E]" name="Label" class="text-font menu-button controls-label control-label-last" style="margin-right: 0; margin-top: 0; margin-bottom: 0; margin-left: 0;"/>
+                    </ui:VisualElement>
+                    <ui:VisualElement name="control-label-parent" class="control-label-parent" style="flex-grow: 1;">
+                        <ui:Label text="Inventory" name="Label" class="text-font menu-button controls-label" style="-unity-text-align: upper-left; margin-right: 0; margin-top: 0; margin-bottom: 0; margin-left: 0;"/>
+                        <ui:Label text="[TAB]" name="Label" class="text-font menu-button controls-label control-label-last" style="margin-right: 0; margin-top: 0; margin-bottom: 0; margin-left: 0;"/>
+                    </ui:VisualElement>
+                    <ui:VisualElement name="control-label-parent" class="control-label-parent" style="flex-grow: 1;">
+                        <ui:Label text="Navigate Inventory" name="Label" class="text-font menu-button controls-label" style="-unity-text-align: upper-left; margin-right: 0; margin-top: 0; margin-bottom: 0; margin-left: 0;"/>
+                        <ui:Label text="[Q]/[E]" name="Label" class="text-font menu-button controls-label control-label-last" style="margin-right: 0; margin-top: 0; margin-bottom: 0; margin-left: 0;"/>
+                    </ui:VisualElement>
+                    <ui:VisualElement name="control-label-parent" class="control-label-parent" style="flex-grow: 1;">
+                        <ui:Label text="Map" name="Label" class="text-font menu-button controls-label" style="-unity-text-align: upper-left; margin-right: 0; margin-top: 0; margin-bottom: 0; margin-left: 0;"/>
+                        <ui:Label text="[M]" name="Label" class="text-font menu-button controls-label control-label-last" style="margin-right: 0; margin-top: 0; margin-bottom: 0; margin-left: 0;"/>
+                    </ui:VisualElement>
+                    <ui:VisualElement name="control-label-parent" class="control-label-parent" style="flex-grow: 1;">
+                        <ui:Label text="Notes" name="Label" class="text-font menu-button controls-label" style="-unity-text-align: upper-left; margin-right: 0; margin-top: 0; margin-bottom: 0; margin-left: 0;"/>
+                        <ui:Label text="[N]" name="Label" class="text-font menu-button controls-label control-label-last" style="margin-right: 0; margin-top: 0; margin-bottom: 0; margin-left: 0;"/>
+                    </ui:VisualElement>
+                    <ui:VisualElement name="control-label-parent" class="control-label-parent" style="flex-grow: 1; border-bottom-width: 0;">
+                        <ui:Label text="Pause" name="Label" class="text-font menu-button controls-label" style="-unity-text-align: upper-left; margin-right: 0; margin-top: 0; margin-bottom: 0; margin-left: 0;"/>
+                        <ui:Label text="[ESC]" name="Label" class="text-font menu-button controls-label control-label-last" style="margin-right: 0; margin-top: 0; margin-bottom: 0; margin-left: 0;"/>
+                    </ui:VisualElement>
+                </ui:VisualElement>
+                <ui:Button text="Return" name="return-controls" emoji-fallback-support="false" class="menu-button text-font" style="padding-top: 40px; padding-bottom: 40px; align-self: flex-end; margin-left: 130px; margin-top: 30px; margin-right: 21px; margin-bottom: 2px; position: relative;"/>
+            </ui:ScrollView>
+        </ui:VisualElement>
+        <ui:VisualElement name="filter" enabled="false" class="crt" style="flex-grow: 1; background-image: url(&quot;project://database/Assets/Render_Textures/UI/horizontal-stripe.jpg?fileID=2800000&amp;guid=1244da132199ebe4698c46a9327c2f57&amp;type=3#horizontal-stripe&quot;); position: absolute; background-color: rgba(0, 0, 0, 0); top: 0; left: 0; right: 0; bottom: 0; -unity-background-image-tint-color: rgb(111, 111, 111); opacity: 0.01; width: 100%; height: 100%;"/>
+    </ui:VisualElement>
+</ui:UXML>

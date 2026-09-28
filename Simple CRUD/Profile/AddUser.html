@@ -1,0 +1,72 @@
+<?php
+
+?>
+
+
+<style>
+    span{
+        display: flex;
+        align-items: center;
+        justify-content: left;
+    }
+    .radio{
+        width: 13px;
+        height: 13px;
+    }
+</style>
+<html>
+    <title>
+        Add User
+    </title>
+    <head>
+        <link rel="stylesheet" href="style.css">
+       <!-- <link rel="stylesheet" href="/navigBarStyle.css">-->
+    </head>
+    <body>
+        <!--<ul id="navBar" class="navUl">
+            <li class="mainList"><a href="/Profile/Home.html">Home</a></li>
+            <li class="mainList"><a href="">News</a></li>
+            <li class="mainList"><a href="">Announcement</a></li>
+            <li class="mainList"><a href="/AboutUs/AboutUs.html">About Us</a></li>
+            <li class="mainList"><a href="/ContactUs/ContactUs.html" >Contact Us</a></li>
+            <li class="mainList"><a href="">Settings</a>
+                <ul class="navUl">
+                    <li><a href="">User</a>
+                        <ul class="navUl">
+                            <li><a href="/Lists/List_Profile.html">Profile</a></li>
+                            <li><a href="/Lists/List_Schedule.html">Schedule</a></li>
+                            <li><a href="/Lists/List_User.html">Accounts</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+        </ul>-->
+
+        <div style="height: 20px;"></div>
+        <form action="/Lists/List_User.html">
+            <div id="parentContainer" style="height: 380px;">
+                <h3 style="margin-bottom: 30px; margin-left: 9px;">Add User</h3>
+                <div id="childContainer">
+                    <label for="studNo">Student No.</label>
+                    <input id="studNo" class="field" type="number">
+                    <label for="lName">Last Name</label>
+                    <input id="lName" class="field" type="text">
+                    <label for="fName">First Name</label>
+                    <input id="fName" class="field" type="text">
+                    <label for="mName">Middle Name</label>
+                    <input id="mName" class="field" type="text">
+                    <label for="uName">Username</label>
+                    <input id="uName" class="field" type="text">
+                    <label for="password">Password</label>
+                        <input id="password" class="field" type="text">
+                    <div></div>
+                    
+                </div>
+                <div id="buttonContainer">
+                    <input class="buttons" type="submit">
+                        <button class="buttons" onclick="window.location.href='/Lists/List_User.html'"> cancel </button>
+                </div>
+            </div>
+        </form>
+    </body>
+</html>

@@ -1,0 +1,78 @@
+
+<style>
+    span{
+        display: flex;
+        align-items: center;
+        justify-content: left;
+    }
+    .radio{
+        width: 13px;
+        height: 13px;
+    }
+</style>
+<!DOCTYPE html>
+<html>
+    <title>
+        Add Profile
+    </title>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <link href="/navigationBar.html">
+        
+        <!--<link rel="stylesheet" href="/navigBarStyle.css">-->
+    </head>
+    <body>
+       <!-- <ul id="navBar" class="navUl">
+            <li class="mainList"><a href="/Profile/Home.html">Home</a></li>
+            <li class="mainList"><a href="">News</a></li>
+            <li class="mainList"><a href="">Announcement</a></li>
+            <li class="mainList"><a href="/AboutUs/AboutUs.html">About Us</a></li>
+            <li class="mainList"><a href="/ContactUs/ContactUs.html" >Contact Us</a></li>
+            <li class="mainList"><a href="">Settings</a>
+                <ul class="navUl">
+                    <li><a href="">User</a>
+                        <ul class="navUl">
+                            <li><a href="/Lists/List_Profile.html">Profile</a></li>
+                            <li><a href="/Lists/List_Schedule.html">Schedule</a></li>
+                            <li><a href="/Lists/List_User.html">Accounts</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+        </ul>-->
+
+        <div style="height: 20px;"></div>
+        <form action="/Lists/List_Profile.html">
+            <div id="parentContainer" style="height: 380px;">
+                <h3 style="margin-bottom: 30px; margin-left: 9px;">Add Profile</h3>
+                <div id="childContainer">
+                    <label for="studNo">Student No.</label>
+                    <input id="studNo" class="field" type="number">
+                    <label for="lName">Last Name</label>
+                    <input id="lName" class="field" type="text">
+                    <label for="fName">First Name</label>
+                    <input id="fName" class="field" type="text">
+                    <label for="mName">Middle Name</label>
+                    <input id="mName" class="field" type="text">
+                    <label for="bDay">Birthday</label>
+                    <input id="bDay" class="field" type="date">
+                    <label for="gender">Gender</label>
+                    <span>
+                        <label for="male">Male</label>
+                        <input style="float: left;" name="gender" id="male" class="field radio" type="radio">
+                        <label style="width: 33px;" for="female">Female</label>
+                        <input style="float: left;" name="gender" id="female" class="field radio" type="radio">
+                    </span>
+                    <div></div>
+                    <span style="display: flex;">
+                    </span>
+                    
+                </div>
+                <div id="buttonContainer">
+                    <input class="buttons" type="submit">
+                        <button class="buttons" onclick="window.location.href='/Lists/List_Profile.html'"> cancel </button>
+                </div>
+            </div>
+        </form>
+    </body>
+</html>

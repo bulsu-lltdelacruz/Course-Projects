@@ -1,0 +1,58 @@
+*{
+}
+table,td,th{
+    border-collapse: collapse;
+}
+table{
+    border: solid black 1px;
+    width: 700px;
+    height: 400px;
+}
+#parentDiv{
+    padding-top: 60px;
+    padding-left: 25%;
+}
+#leftSide{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #313131;
+    height: 70%;
+}
+#leftSidei{
+    display: block;
+    justify-content: center;
+    text-align: center;
+    inset: 10px;
+    align-items: start;
+    background-color: #313131;
+    color: white;
+    height: 30%;
+}
+#leftTd{
+    width: 50%;
+}
+#rightSide{
+    display: flex;
+    justify-content: center;
+    margin-right: 22px;
+    text-align: center;
+}
+#profilePic{
+    width: 150px;   
+}
+.info{
+    font-size: 17px;
+    margin-bottom: 20px;
+    line-height: 20px;
+}
+#name{
+    font-size: 20px;
+    font-weight: 600;
+}
+#position{
+    /*width: 130px;*/
+    background-color: white;
+    /*border-radius: 30%;*/
+    color: #313131;
+}

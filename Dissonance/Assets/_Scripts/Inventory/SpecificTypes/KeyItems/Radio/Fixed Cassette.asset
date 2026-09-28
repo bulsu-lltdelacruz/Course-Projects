@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d9179c0e1fe026045a9c6966827db98e, type: 3}
+  m_Name: Fixed Cassette
+  m_EditorClassIdentifier: Assembly-CSharp::DefaultObject
+  itemName: Fixed Cassette
+  image: {fileID: 2800000, guid: 852e1f999cc3a034aa349b19d4c5bb96, type: 3}
+  prefab: {fileID: 0}
+  animationTrigger: 
+  location: 0
+  itemType: 1
+  shouldDestroyAfterUse: 1
+  keyName: 12
+  equipType: 2
+  description: A cassette tape. I can probably play this on a radio.
+  requiredAmmoType: 0
+  ammoType: 0
+  maxAmmoPerReload: 10
+  maxStackSize: 1

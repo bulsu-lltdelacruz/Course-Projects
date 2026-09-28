@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd70665ce8edc344989cbee681088721, type: 3}
+  m_Name: RifileItemObject
+  m_EditorClassIdentifier: Assembly-CSharp::RangedItem
+  itemName: 
+  image: {fileID: 2800000, guid: 4546083d2b0178642889f15246d840b4, type: 3}
+  prefab: {fileID: 919132149155446097, guid: 7d46287eb2a9f9f49a85aecb6a862209, type: 3}
+  animationTrigger: 
+  location: 0
+  itemType: 4
+  shouldDestroyAfterUse: 0
+  keyName: 0
+  equipType: 1
+  description: 
+  requiredAmmoType: 0
+  ammoType: 0
+  maxAmmoPerReload: 10
+  maxStackSize: 1
+  damageFloor: 0
+  damageCeiling: 0
+  range: 0
+  attackDuration: 0
+  timingFloor: 0
+  timingCeiling: 0

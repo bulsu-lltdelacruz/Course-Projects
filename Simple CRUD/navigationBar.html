@@ -1,0 +1,78 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="/navigBarStyle.css">
+    </head>
+    <body>
+        <div id="darkenScreen"></div>
+        <div id="navOffset">
+            <h2 id="titleHeader">
+                My Website
+            </h2>
+            <img id="logoImg" src="/images/MyLogo.jpg" alt="">
+            <ul id="loginNav">
+                <li >
+                    <div id="hoverProfile"></div>
+                        <img id="accLogo" src="/images/AccountLogo.png"  style="color: white;"></img>
+                   
+                    <div class="arrowUp"></div>
+                    <ul style="z-index: 2;">
+                        <li>
+                            <a  href="/Profile/CreateUser.html">LogIn</a>
+                        </li>
+                        <li>
+                            <a href="javascript:popUpLogOut()">LogOut</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    
+        <div id="parentDiv" >
+            <div id="navContainer">
+                <ul  id="navBar" style="width: 101%;" class="navUl">
+                    <li class="mainList"><a href="/Profile/Home.html">Home</a></li>
+                    <li class="mainList"><a href="">News</a></li>
+                    <li class="mainList"><a href="">Announcement</a></li>
+                    <li class="mainList"><a href="/AboutUs/AboutUs.html">About Us</a></li>
+                    <li class="mainList"><a href="/ContactUs/ContactUs.html" >Contact Us</a></li>
+                    <li class="mainList"  id="settings"><a href="">Settings</a>
+                        <ul class="navUl subNavUL" id="sub1">
+                            <li><a style="margin-top: 5000px;" href="">User</a>
+                                <ul class="navUl" id="sub2">
+                                    <li><a href="/Lists/List_Profile.html">Profile</a></li>
+                                    <li><div class="ayusin"><a  href="/Lists/List_Schedule.html">Schedule</a></div></li>
+                                    <li><div class="ayusin"><a  href="/Lists/List_User.html">Accounts</a></div></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                
+                <ul id="loginNav" class="subLogInNav">
+                    <li>
+                        <div id="hoverProfile"></div>
+                        <img id="subAccLogo" src="/images/AccountLogo-removebg-preview.png"  style="color: white;"></img>
+                       
+                        <div class="arrowUp"></div>
+                        <ul style="z-index: 2; right: -43;">
+                            <li>
+                                <a  href="/Profile/CreateUser.html">LogIn</a>
+                            </li>
+                            <li>
+                                <a href="javascript:popUpLogOut()">LogOut</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            
+                <div class="popUp" id="logoutPopUp">
+                    <h3 id="logOutHead">Log Out</h3>
+                    <p id="logOutSub">Are you sure you want to Log Out?</p>
+                    <button onclick="" id="logOutBtn" class="logOutOption">Yes, Log Out</button>
+                    <button onclick="unPopUpLogOut()" id="cancelBtn" class="logOutOption">Cancel</button>
+                </div>
+    </body>
+</html>
+
+

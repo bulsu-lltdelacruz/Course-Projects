@@ -1,0 +1,14 @@
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI/SaveSystem.uss?fileID=7433441132597879392&amp;guid=b2f891c49d79c9a4f8c58e58fa2c4247&amp;type=3#SaveSystem"/>
+    <Style src="project://database/Assets/UI/Main%20Menu/MainMenu.uss?fileID=7433441132597879392&amp;guid=2e30af61cbc14b84499ccae636d1f871&amp;type=3#MainMenu"/>
+    <Style src="project://database/Assets/UI/PlayerinventoryStyle.uss?fileID=7433441132597879392&amp;guid=9ab4e420ebfb2894abc02169d07235c8&amp;type=3#PlayerinventoryStyle"/>
+    <ui:VisualElement name="parent" style="flex-grow: 1; display: none; position: relative; top: 0; left: 0; right: 0; bottom: 0; opacity: 1;">
+        <ui:VisualElement name="wala" style="flex-grow: 1; background-color: rgb(171, 171, 171); padding-top: 46px; padding-right: 46px; padding-bottom: 46px; padding-left: 46px; background-image: url(&quot;project://database/Assets/Render_Textures/UI/metal.jpg?fileID=2800000&amp;guid=d565b410e1788b0498784eaed7b3dd61&amp;type=3#metal&quot;); -unity-background-image-tint-color: rgba(255, 255, 255, 0.72);">
+            <ui:VisualElement name="VisualElement" class="border" style="flex-grow: 1; background-color: rgb(38, 38, 38); display: flex; align-items: center;">
+                <ui:ScrollView name="save-parent" enabled="true" vertical-scroller-visibility="AlwaysVisible" horizontal-scroller-visibility="Hidden" language-direction="Inherit" focusable="false" usage-hints="None" style="height: 100%; width: 70%; margin-top: 20px; margin-right: 0; margin-bottom: 20px; margin-left: 0; justify-content: center; align-items: stretch; align-self: auto; align-content: flex-start;"/>
+                <ui:Button text="" name="exit" style="position: absolute; top: auto; left: 0; right: auto; bottom: auto; background-image: url(&quot;project://database/Assets/UI%20Toolkit/UnityThemes/UnityDefaultRuntimeTheme.tss?fileID=5866165431930342980&amp;guid=ed2aba92da6edc747bae99ec8e320aab&amp;type=3#Remove@2x&quot;); background-color: rgba(188, 188, 188, 0); aspect-ratio: 1; width: 50px; height: 50px; border-top-width: 0; border-right-width: 0; border-bottom-width: 0; border-left-width: 0;"/>
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement name="filter" enabled="true" class="crt" style="flex-grow: 1; opacity: 0.02; background-image: url(&quot;project://database/Assets/Render_Textures/UI/horizontal-stripe.jpg?fileID=2800000&amp;guid=1244da132199ebe4698c46a9327c2f57&amp;type=3#horizontal-stripe&quot;); position: absolute; top: 0; left: 0; right: 0; bottom: 0; display: flex;"/>
+    </ui:VisualElement>
+</ui:UXML>

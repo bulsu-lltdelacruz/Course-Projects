@@ -1,0 +1,202 @@
+*{
+    /*font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;*/
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+body{
+    margin: 0;
+    font-family: 'Times New Roman';
+}
+#navOffset{
+    height: 60px;
+    width: 100%;
+    background-color: black;
+    
+    z-index: 2;
+}
+#navContainer{
+    position: sticky;
+    top: 0;
+    width: 100%;
+    height: 50px;
+    background-color: rgb(240, 206, 144);
+    z-index: 1;
+}
+#navBar{
+    top: 0;
+    padding-inline: auto;
+    z-index: 1;
+    
+}
+#navBar, #navBar ul{
+    margin: 0px;
+    font-size: 15px;
+    padding: 0 13%;
+    list-style: none;
+}
+.mainList{
+    opacity: 0.9;
+}
+.mainList, .navUl li ul, .navUl li ul li{
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    float: left;
+    text-align: center;
+    vertical-align: middle;
+    background-color: rgb(240, 206, 144);
+    line-height: 40px;
+}
+.navUl li ul{
+    line-height: 50px;
+    width: 100%;
+    height: 50px;
+}
+.navUl li ul li{
+    line-height: 50px;
+    width: 100%;
+    height: 50px;
+}
+.mainList{
+    line-height: 50px;
+    width: 12%;
+    height: 50px;
+}
+a{
+    text-decoration: none;
+    color: rgb(145, 144, 144);
+}
+.navUl li a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+#sub1{
+    width: 73%;
+    margin-left: 200%;
+}
+#sub2{
+    position: absolute;
+    left: -17.7%;
+    width: 109.7%;
+}
+.ayusin{
+    position: absolute;
+    width: 123.7%;
+    left: -12%;
+    background-color: rgb(240, 206, 144);
+}
+.navUl li a:hover {
+    color: white;
+    transition-duration: 300ms;
+}
+.navUl li ul {
+    display: none;
+}
+.navUl li:hover > ul {
+   display: block;
+   animation-name: dropDown; 
+   animation-duration: 200ms;
+   transform-origin: top center;
+}
+.subNavUl li:hover > ul {
+    animation-duration: 300ms;
+ }
+@keyframes dropDown {
+    from {
+        transform: scaleY(0)
+    }
+    to {
+        transform: scaleY(1)
+    }
+}
+.navUL{
+    font-weight: 400;
+}
+/*******************************************************************/
+#titleHeader{
+    position: absolute;
+    color: white;
+    left: 100;
+    top: -6;
+}
+#logoImg{
+    position: absolute;
+    top : 3;
+    left: 250;
+    width: 50;
+    filter: invert();
+}
+#accLogo{
+    width: 95%;
+    margin-top: 5px;
+    margin-right: 40px;
+}
+#loginNav{
+    margin-top: 1.2px;
+    margin-right: 5%;
+    width: 40px;
+    float: right;
+    
+}
+.arrowUp{
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom:12px solid rgb(255, 255, 255);
+    margin-left: 29%;
+    z-index: 100;
+    display: none;
+    position: absolute;
+    right: 5.8%;
+
+}
+#loginNav li ul{
+    /*ere yung dropdown*/
+    position: absolute;
+    /*display: none;*/
+    /*none to*/
+    background-color: white;
+    top: 50;
+    right : 4%; 
+    line-height: 40px;
+}
+#loginNav li ul a{
+    color: black;
+    padding-right: 25px;
+}
+#loginNav ul{
+    list-style: none;
+    display: none;
+    background-color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+#loginNav li:hover >ul, #loginNav li:hover > .arrowUp{
+    display: block;
+    animation: dropDown 300ms;
+    transform-origin: top center;
+}
+#loginNav li:hover > .arrowUp{animation: dropDown 100ms;}
+
+/* Fading animation */ 
+/*.navUl { 
+    -webkit-animation-name: fade; 
+    -webkit-animation-duration: 1.5s; 
+    animation-name: fade; 
+    animation-duration: 1.5s; 
+  } */
+   
+  @-webkit-keyframes fade { 
+    from {opacity: .4}  
+    to {opacity: 1} 
+  } 
+   
+  @keyframes fade { 
+    from {opacity: .4}  
+    to {opacity: 1} 
+  }
+   
+  /* On smaller screens, decrease text size */ 
+  @media only screen and (max-width: 300px) { 
+    .prev, .next,.text {font-size: 11px} 
+  }

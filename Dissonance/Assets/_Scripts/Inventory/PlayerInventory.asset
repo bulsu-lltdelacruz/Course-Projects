@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e66e8caaff1ca541a09b27ac1e88e37, type: 3}
+  m_Name: PlayerInventory
+  m_EditorClassIdentifier: Assembly-CSharp::InventoryObject
+  equipedItem: {fileID: 0}
+  player: {fileID: 0}
+  combineRecipes:
+  - itemA: {fileID: 11400000, guid: 37c60c4e74801a0409313fb9caa5c5c4, type: 2}
+    itemB: {fileID: 11400000, guid: 7187ddb658e0f7d4f91d408bd5f739f5, type: 2}
+    resultItem: {fileID: 11400000, guid: 49895195943e42b4cacc4d3296586b14, type: 2}
+    resultAmount: 1
+  - itemA: {fileID: 11400000, guid: 62ec80b2ae0119445a628082fb5480b6, type: 2}
+    itemB: {fileID: 11400000, guid: 5249626dcc17a9344826bc36183d948b, type: 2}
+    resultItem: {fileID: 11400000, guid: 8645e8b20b298394da470f5aeb9c4f24, type: 2}
+    resultAmount: 1
+  - itemA: {fileID: 11400000, guid: a4251c97dd1ea9443bf2f1dac6b98243, type: 2}
+    itemB: {fileID: 11400000, guid: 766934843df3db446ac5aee26361047e, type: 2}
+    resultItem: {fileID: 11400000, guid: 2dd80278e22ae9442a1e229909d659d0, type: 2}
+    resultAmount: 1
+  - itemA: {fileID: 11400000, guid: 95aa1e95579293e4c873bce71d11e602, type: 2}
+    itemB: {fileID: 11400000, guid: 95aa1e95579293e4c873bce71d11e602, type: 2}
+    resultItem: {fileID: 11400000, guid: e25d879a761187143b8df222765be08c, type: 2}
+    resultAmount: 1
+  - itemA: {fileID: 11400000, guid: 95aa1e95579293e4c873bce71d11e602, type: 2}
+    itemB: {fileID: 11400000, guid: 103566799d7ee1349a4227585de78654, type: 2}
+    resultItem: {fileID: 11400000, guid: 4fd4bcf201010fe4e83904aeb6fb3318, type: 2}
+    resultAmount: 8

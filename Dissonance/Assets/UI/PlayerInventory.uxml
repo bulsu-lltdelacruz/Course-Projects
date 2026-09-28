@@ -1,0 +1,225 @@
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="True">
+    <Style src="project://database/Assets/UI/PlayerinventoryStyle.uss?fileID=7433441132597879392&amp;guid=9ab4e420ebfb2894abc02169d07235c8&amp;type=3#PlayerinventoryStyle"/>
+    <ui:VisualElement name="parent" enabled="true" class="parent-close" style="flex-grow: 1; width: 200%; flex-direction: column; align-items: stretch; justify-content: space-around; align-self: stretch; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0; background-color: rgb(63, 63, 67); opacity: 1; transition-property: translate; transition-duration: 0.2s; transition-timing-function: linear; background-image: url(&quot;project://database/Assets/Render_Textures/UI/metal.jpg?fileID=2800000&amp;guid=d565b410e1788b0498784eaed7b3dd61&amp;type=3#metal&quot;); -unity-background-image-tint-color: rgb(79, 79, 79);">
+        <ui:VisualElement name="header" style="flex-grow: 1; height: 80px; flex-direction: row; margin-top: 10px; width: 50%; align-items: center; align-content: flex-start; justify-content: center; max-height: 80px; min-height: 80px;">
+            <ui:VisualElement name="close" style="flex-grow: 1; position: absolute; top: 7px; left: 57px; right: auto; bottom: auto; width: 50px; height: 50px; background-image: url(&quot;project://database/Assets/UI%20Toolkit/UnityThemes/UnityDefaultRuntimeTheme.tss?fileID=-7384953405098038083&amp;guid=ed2aba92da6edc747bae99ec8e320aab&amp;type=3#Remove&quot;);"/>
+            <ui:Label text="Q" name="navigation-left" emoji-fallback-support="true" class="header-label navigation" style="width: auto; aspect-ratio: 1; white-space: normal; -unity-text-align: middle-center; border-left-color: rgb(124, 124, 126); border-right-color: rgb(124, 124, 126); border-top-color: rgb(124, 124, 126); border-bottom-color: rgb(124, 124, 126); border-top-width: 5px; border-right-width: 5px; border-bottom-width: 5px; border-left-width: 5px; padding-top: 5px; padding-right: 5px; padding-bottom: 5px; padding-left: 5px; opacity: 0.3; font-size: 30px;"/>
+            <ui:Label text="Inventory&#10;" name="page-label" emoji-fallback-support="false" class="header-label" style="font-size: 35px; text-shadow: 0 0 0 rgba(0, 0, 0, 0); width: 30%; -unity-text-align: middle-center;"/>
+            <ui:Label text="E" name="navigation-right" emoji-fallback-support="true" class="header-label" style="width: auto; aspect-ratio: 1; -unity-text-align: middle-center; border-top-width: 5px; border-right-width: 5px; border-bottom-width: 5px; border-left-width: 5px; border-left-color: rgb(124, 124, 126); border-right-color: rgb(124, 124, 126); border-top-color: rgb(124, 124, 126); border-bottom-color: rgb(124, 124, 126); padding-top: 5px; padding-right: 5px; padding-bottom: 5px; padding-left: 5px; font-size: 30px;"/>
+        </ui:VisualElement>
+        <ui:VisualElement name="inventory-parent" style="flex-grow: 1; flex-direction: row; padding-top: 10px; padding-right: 60px; padding-bottom: 60px; padding-left: 60px; transition-duration: 0.3s; transition-timing-function: linear; transition-property: translate;">
+            <ui:VisualElement name="inventory" enabled="true" style="flex-grow: 1; width: 50%; flex-direction: column; align-items: center; justify-content: space-around; align-self: stretch; padding-top: 0; padding-right: 60px; padding-bottom: 0; padding-left: 0; background-color: rgba(63, 63, 67, 0); opacity: 1; transition-property: all; transition-duration: 0.3s; transition-timing-function: linear; min-width: 50%; max-width: 50%; margin-right: 0;">
+                <ui:VisualElement name="inner-border" style="flex-grow: 1; background-color: rgba(63, 63, 68, 0); flex-shrink: 1; width: 100%; height: 100px; max-width: 100%; max-height: 100%; min-height: 100%; min-width: 100%;">
+                    <ui:VisualElement name="items-panel" style="flex-grow: 1; align-self: flex-start; width: 100%; height: 63%; flex-direction: row; -unity-background-image-tint-color: rgb(34, 34, 34); justify-content: space-between;">
+                        <ui:VisualElement name="inventory" class="border parent-open" style="flex-grow: 0; flex-shrink: 0; align-items: center; justify-content: center; flex-direction: row; width: 60%; margin-top: 0; margin-right: 30px; margin-bottom: 30px; margin-left: 0; background-color: rgb(23, 23, 25);">
+                            <ui:VisualElement name="grid" style="flex-grow: 0; flex-direction: row; flex-wrap: wrap; height: 100%; justify-content: center; align-items: center; width: 706px; flex-shrink: 0; align-content: center; padding-right: 0; align-self: center;">
+                                <ui:VisualElement name="VisualElement" class="itemSlotParent" style="flex-grow: 1; display: none;">
+                                    <ui:VisualElement class="itemSlot" style="flex-grow: 1; display: flex; background-image: url(&quot;project://database/Assets/_Sprites/Inventory/InvebtoryImage/keyset1_3.png?fileID=2800000&amp;guid=bf6a9fdf29e02084fb91a0abd90f9cec&amp;type=3#keyset1_3&quot;);">
+                                        <ui:Label text="Bitch" class="amountLabel"/>
+                                    </ui:VisualElement>
+                                </ui:VisualElement>
+                                <ui:VisualElement name="VisualElement" class="itemSlotParent" style="flex-grow: 1; display: none;">
+                                    <ui:VisualElement class="itemSlot" style="flex-grow: 1; display: flex; background-image: url(&quot;project://database/Assets/_Sprites/Inventory/InvebtoryImage/keyset1_3.png?fileID=2800000&amp;guid=bf6a9fdf29e02084fb91a0abd90f9cec&amp;type=3#keyset1_3&quot;);">
+                                        <ui:Label text="Bitch" class="amountLabel"/>
+                                    </ui:VisualElement>
+                                </ui:VisualElement>
+                                <ui:VisualElement name="VisualElement" class="itemSlotParent" style="flex-grow: 1; display: none;">
+                                    <ui:VisualElement class="itemSlot" style="flex-grow: 1; display: flex; background-image: url(&quot;project://database/Assets/_Sprites/Inventory/InvebtoryImage/keyset1_3.png?fileID=2800000&amp;guid=bf6a9fdf29e02084fb91a0abd90f9cec&amp;type=3#keyset1_3&quot;);">
+                                        <ui:Label text="Bitch" class="amountLabel"/>
+                                    </ui:VisualElement>
+                                </ui:VisualElement>
+                                <ui:VisualElement name="VisualElement" class="itemSlotParent" style="flex-grow: 1; display: none;">
+                                    <ui:VisualElement class="itemSlot" style="flex-grow: 1; display: flex; background-image: url(&quot;project://database/Assets/_Sprites/Inventory/InvebtoryImage/keyset1_3.png?fileID=2800000&amp;guid=bf6a9fdf29e02084fb91a0abd90f9cec&amp;type=3#keyset1_3&quot;);">
+                                        <ui:Label text="Bitch" class="amountLabel"/>
+                                    </ui:VisualElement>
+                                </ui:VisualElement>
+                                <ui:VisualElement name="VisualElement" class="itemSlotParent" style="flex-grow: 1; display: none;">
+                                    <ui:VisualElement class="itemSlot" style="flex-grow: 1; display: flex; background-image: url(&quot;project://database/Assets/_Sprites/Inventory/InvebtoryImage/keyset1_3.png?fileID=2800000&amp;guid=bf6a9fdf29e02084fb91a0abd90f9cec&amp;type=3#keyset1_3&quot;);">
+                                        <ui:Label text="Bitch" class="amountLabel"/>
+                                    </ui:VisualElement>
+                                </ui:VisualElement>
+                                <ui:VisualElement name="VisualElement" class="itemSlotParent" style="flex-grow: 1; display: none;">
+                                    <ui:VisualElement class="itemSlot" style="flex-grow: 1; display: flex; background-image: url(&quot;project://database/Assets/_Sprites/Inventory/InvebtoryImage/keyset1_3.png?fileID=2800000&amp;guid=bf6a9fdf29e02084fb91a0abd90f9cec&amp;type=3#keyset1_3&quot;);">
+                                        <ui:Label text="Bitch" class="amountLabel"/>
+                                    </ui:VisualElement>
+                                </ui:VisualElement>
+                            </ui:VisualElement>
+                            <ui:VisualElement name="filter" class="crt" style="flex-grow: 1; position: absolute; width: 100%; height: 100%; min-height: 100%; max-height: 100%; max-width: 100%; min-width: 100%; background-color: rgb(24, 24, 25);"/>
+                        </ui:VisualElement>
+                        <ui:VisualElement class="border" style="flex-grow: 1; width: 30%; background-color: rgb(23, 23, 25); margin-top: 0; margin-right: 0; margin-bottom: 30px; margin-left: 30px; max-width: 30%; justify-content: center; height: 55%;">
+                            <ui:VisualElement name="health" class="video-player" style="flex-grow: 1; background-image: url(&quot;project://database/Assets/Render_Textures/UI/Heartbeat_flatline.gif?fileID=2800000&amp;guid=464a2949119bfe042bb918cd8ebc91fe&amp;type=3#Heartbeat_flatline&quot;); background-repeat: no-repeat no-repeat; -unity-background-scale-mode: scale-to-fit; background-position-y: center; background-size: cover; width: 100%; align-self: center; height: 100%; max-height: none; justify-content: flex-start; -unity-background-image-tint-color: rgb(0, 255, 0); opacity: 0.24; background-color: rgba(0, 255, 0, 0.04);"/>
+                            <ui:VisualElement name="health-filter" class="crt" style="flex-grow: 1; position: absolute; width: 100%; height: 100%; min-height: 100%; max-height: 100%; max-width: 100%; min-width: 100%; opacity: 0.08; display: none; -unity-background-image-tint-color: rgb(65, 65, 65); background-image: none; background-color: rgba(0, 255, 0, 0.08);"/>
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                    <ui:VisualElement name="details-panel" style="flex-grow: 1; align-self: center; width: 100%; height: 37%; flex-direction: row; align-items: center; justify-content: center;">
+                        <ui:VisualElement name="itemPictureContainer" class="border" style="flex-grow: 1; width: 45%; height: 100%; align-items: center; justify-content: center; background-color: rgb(23, 23, 25); margin-top: 30px; margin-right: 30px;">
+                            <ui:VisualElement name="itemPicture" class="itemPicture" style="flex-grow: 1; border-top-left-radius: 1px; border-top-right-radius: 1px; border-bottom-right-radius: 1px; border-bottom-left-radius: 1px; background-color: rgba(0, 0, 0, 0); background-size: contain; -unity-background-scale-mode: scale-to-fit; -unity-slice-type: sliced; background-image: none;"/>
+                            <ui:VisualElement name="filter" class="crt" style="flex-grow: 1; position: absolute; width: 100%; height: 100%; min-height: 100%; max-height: 100%; max-width: 100%; min-width: 100%;"/>
+                        </ui:VisualElement>
+                        <ui:VisualElement name="itemDescriptionContainer" class="border" style="flex-grow: 1; width: 55%; height: 100%; justify-content: center; align-items: center; max-height: 99%; min-height: 100%; margin-top: 30px; margin-left: 30px;">
+                            <ui:VisualElement name="itemDescription" class="itemDescription" style="flex-grow: 1; width: 100%; height: 100%; max-width: 100%; max-height: 100%; background-color: rgb(23, 23, 25);">
+                                <ui:Label text="" name="itemDescriptionText" class="descriptionText" style="font-size: 25%; -unity-font-style: normal; width: 80%; height: 80%; min-width: 80%; max-width: 80%; min-height: 80%; max-height: 80%; text-overflow: clip; -unity-text-align: middle-center;"/>
+                                <ui:VisualElement name="filter" class="crt" style="flex-grow: 1; position: absolute; width: 100%; height: 100%; min-height: 100%; max-height: 100%; max-width: 100%; min-width: 100%;"/>
+                            </ui:VisualElement>
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:VisualElement name="map-parent" class="map-open" style="flex-grow: 1; width: 50%; min-width: 50%; max-width: 50%; -unity-background-image-tint-color: rgb(255, 255, 255); height: auto; background-color: rgba(0, 0, 0, 0); top: auto; opacity: 1; flex-shrink: 1; flex-direction: column; flex-wrap: nowrap; overflow: visible; margin-left: 0; translate: 0% 0%; padding-left: 60px;">
+                <ui:VisualElement name="map-child" class="border" style="flex-grow: 1; background-color: rgb(23, 23, 24); display: flex; height: 100%; min-height: 100%;">
+                    <ui:ScrollView name="map-child-scroll" mode="Vertical" horizontal-scroller-visibility="Hidden" vertical-scroller-visibility="Auto" enabled="true" style="height: 100%; min-height: 100%; max-height: 100%;">
+                        <ui:VisualElement name="map-content" style="flex-grow: 1; height: 2733px; min-height: auto; width: 2000px; display: flex; margin-left: -155px;">
+                            <ui:VisualElement name="ReceptionRoom" class="map-itself-absolute" style="flex-grow: 1; height: auto; background-image: url(&quot;project://database/Assets/UI/Map%20System/Reception%20Room.png?fileID=2800000&amp;guid=0401ed331dfe98c4aa694b7c23e77e94&amp;type=3#Reception Room&quot;);">
+                                <ui:VisualElement name="MD_Reception_West" class="single-door-vertical notInteracted" style="flex-grow: 1; position: absolute; top: 2491px; left: 817px;"/>
+                                <ui:VisualElement name="MD_Reception_North" class="single-door-horizontal double-door-horizontal notInteracted" style="flex-grow: 1; position: absolute; top: 2073px; left: 1009px; width: 40px;"/>
+                                <ui:VisualElement name="MD_Reception_South" class="single-door-horizontal notInteracted locked" style="flex-grow: 1; position: absolute; top: 2535px; left: 1066px;"/>
+                                <ui:VisualElement name="MD_Pharmacy" class="single-door-vertical notInteracted" style="flex-grow: 1; position: absolute; top: 2478px; left: 1127px;"/>
+                            </ui:VisualElement>
+                            <ui:VisualElement name="ElevatorLowerLeft" class="map-itself-absolute" style="flex-grow: 1; height: auto; background-image: url(&quot;project://database/Assets/UI/Map%20System/BottomLeftElevator.png?fileID=2800000&amp;guid=90aa0abf89187504d8223aa9836dc1b3&amp;type=3#BottomLeftElevator&quot;);"/>
+                            <ui:VisualElement name="AnimalKeys" class="map-itself-absolute" style="flex-grow: 1; background-image: url(&quot;project://database/Assets/UI/Map%20System/Puzzle%20Room.png?fileID=2800000&amp;guid=6736c9104545b8247ba90b4aff53b7e0&amp;type=3#Puzzle Room&quot;);">
+                                <ui:VisualElement name="MD_PuzzleRoom_South" class="single-door-horizontal notInteracted" style="flex-grow: 1; position: absolute; top: 2361px; left: 585px;"/>
+                                <ui:VisualElement name="MD_PuzzleRoomFinalUnlock" class="single-door-horizontal notInteracted" style="flex-grow: 1; position: absolute; top: 2179px; left: 649px;"/>
+                                <ui:VisualElement name="MD_PuzzleRoom_West" class="unlocked single-door-vertical" style="flex-grow: 1; position: absolute; top: 2313px; left: 484px;"/>
+                            </ui:VisualElement>
+                            <ui:VisualElement name="Hallway" class="map-itself-absolute" style="flex-grow: 1; background-image: url(&quot;project://database/Assets/UI/Map%20System/Hallway.png?fileID=2800000&amp;guid=027acc6843975d44f888995066699114&amp;type=3#Hallway&quot;);">
+                                <ui:VisualElement name="MD_HallwayEast_PuzzleRoom" class="single-door-horizontal unlocked" style="flex-grow: 1; position: absolute; top: 2361px; left: 585px;"/>
+                                <ui:VisualElement name="MD_HallwayEast_Computer" class="single-door-horizontal unlocked" style="flex-grow: 1; position: absolute; top: 2361px; left: 751px;"/>
+                                <ui:VisualElement name="MD_HallwayEast_East" class="unlocked single-door-vertical" style="flex-grow: 1; position: absolute; top: 2490px; left: 817px;"/>
+                                <ui:VisualElement name="MD_HallwayEast_WestElevator" class="unlocked single-door-vertical" style="flex-grow: 1; position: absolute; top: 2491px; left: 425px;"/>
+                            </ui:VisualElement>
+                            <ui:VisualElement name="ComputerRoom" class="map-itself-absolute" style="flex-grow: 1; background-image: url(&quot;project://database/Assets/UI/Map%20System/Computer%20Room.png?fileID=2800000&amp;guid=247cb56af0782f94d8c01134801a9f06&amp;type=3#Computer Room&quot;); display: flex;">
+                                <ui:VisualElement name="ComputerRoomToMD_Hallway" class="single-door-horizontal unlocked" style="flex-grow: 1; position: absolute; top: 2361px; left: 751px;"/>
+                                <ui:Label text="Save" class="save-room-text" style="top: 2210px; left: 736px;"/>
+                            </ui:VisualElement>
+                            <ui:VisualElement name="Pharmacy" class="map-itself-absolute" style="flex-grow: 1; background-image: url(&quot;project://database/Assets/UI/Map%20System/Pharmacy%20Room.png?fileID=2800000&amp;guid=c064fa034b929e94ea19702e1603aca6&amp;type=3#Pharmacy Room&quot;);">
+                                <ui:VisualElement name="MD_Pharmacy_ToReception" class="unlocked single-door-vertical" style="flex-grow: 1; position: absolute; top: 2478px; left: 1127px;"/>
+                            </ui:VisualElement>
+                            <ui:VisualElement name="UtilityWalkWay" class="map-itself-absolute" style="flex-grow: 1; background-image: url(&quot;project://database/Assets/UI/Map%20System/Utility%20Walkway.png?fileID=2800000&amp;guid=2a9abbfcc7b789b4399daba78bc51a79&amp;type=3#Utility Walkway&quot;);">
+                                <ui:VisualElement name="MW_Utility_ToReception" class="single-door-horizontal unlocked" style="flex-grow: 1; position: absolute; top: 2535px; left: 1066px;"/>
+                                <ui:VisualElement name="MW_Utility_ToMaleBathroom" class="single-door-horizontal unlocked" style="flex-grow: 1; position: absolute; top: 2536px; left: 1489px;"/>
+                            </ui:VisualElement>
+                            <ui:VisualElement name="MaleToilet" class="map-itself-absolute" style="flex-grow: 1; background-image: url(&quot;project://database/Assets/UI/Map%20System/Male%20Toilet.png?fileID=2800000&amp;guid=f99118ab308ed7e43a212102f53824e9&amp;type=3#Male Toilet&quot;);">
+                                <ui:VisualElement name="MD_MaleCR_North" class="single-door-horizontal unlocked" style="flex-grow: 1; position: absolute; top: 2228px; left: 1437px;"/>
+                                <ui:VisualElement name="MD_MaleCR_South" class="single-door-horizontal unlocked" style="flex-grow: 1; position: absolute; top: 2536px; left: 1489px;"/>
+                                <ui:Label text="Save" class="save-room-text" style="top: 2239px; left: 1466px;"/>
+                            </ui:VisualElement>
+                            <ui:VisualElement name="FemaleToilet" class="map-itself-absolute" style="flex-grow: 1; background-image: url(&quot;project://database/Assets/UI/Map%20System/Female%20Toilet.png?fileID=2800000&amp;guid=66d7fc30951ae394097156291715fb61&amp;type=3#Female Toilet&quot;);">
+                                <ui:VisualElement name="MD_FemaleCR_West" class="unlocked single-door-vertical" style="flex-grow: 1; position: absolute; top: 2123px; left: 1559px;"/>
+                            </ui:VisualElement>
+                            <ui:VisualElement name="ElevatorRight" class="map-itself-absolute" style="flex-grow: 1; background-image: url(&quot;project://database/Assets/UI/Map%20System/RightElevator.png?fileID=2800000&amp;guid=4df9bcdbecc47bf4a81a7b2ce5f746ba&amp;type=3#RightElevator&quot;); display: flex;"/>
+                            <ui:VisualElement name="UtilityHallway" class="map-itself-absolute" style="flex-grow: 1; background-image: url(&quot;project://database/Assets/UI/Map%20System/Utility%20Hallway.png?fileID=2800000&amp;guid=53b6724d373144940b4a3030302722ed&amp;type=3#Utility Hallway&quot;); display: flex;">
+                                <ui:VisualElement name="MD_UtilityHallway_ToCleaning" class="unlocked single-door-vertical" style="flex-grow: 1; position: absolute; top: 1702px; left: 1353px;"/>
+                                <ui:VisualElement name="MD_UtilityHallway_East" class="unlocked single-door-vertical" style="flex-grow: 1; position: absolute; top: 2123px; left: 1559px;"/>
+                                <ui:VisualElement name="MD_Reception_South" class="single-door-horizontal unlocked" style="flex-grow: 1; position: absolute; top: 2228px; left: 1437px;"/>
+                                <ui:VisualElement name="MD_UtilityHallway_ToStairs" enabled="true" class="unlocked single-door-vertical" style="flex-grow: 1; position: absolute; top: 1883px; left: 1352px;"/>
+                            </ui:VisualElement>
+                            <ui:VisualElement name="CleaningRoom" class="map-itself-absolute" style="flex-grow: 1; background-image: url(&quot;project://database/Assets/UI/Map%20System/Cleaning%20Room.png?fileID=2800000&amp;guid=2ca455361c6e40d4ab3a03203d728a98&amp;type=3#Cleaning Room&quot;);">
+                                <ui:VisualElement name="MD_UtilityCleaning_ToHallway" class="unlocked single-door-vertical" style="flex-grow: 1; position: absolute; top: 1702px; left: 1353px;"/>
+                            </ui:VisualElement>
+                            <ui:VisualElement name="TaasReception" class="map-itself-absolute" style="flex-grow: 1; background-image: url(&quot;project://database/Assets/UI/Map%20System/Taas%20ng%20Reception.png?fileID=2800000&amp;guid=cd9a0e6e39ee27740913a3179692d13a&amp;type=3#Taas ng Reception&quot;); display: flex;">
+                                <ui:VisualElement name="LQ_FrontHallway_North" class="single-door-horizontal unlocked" style="flex-grow: 1; position: absolute; top: 1523px; left: 1007px;"/>
+                                <ui:VisualElement name="LQ_FrontHallway_Power" class="unlocked single-door-vertical" style="flex-grow: 1; position: absolute; top: 1588px; left: 910px;"/>
+                                <ui:VisualElement name="LQ_FrontHallway_Security" class="unlocked single-door-vertical" style="flex-grow: 1; position: absolute; top: 1755px; left: 910px;"/>
+                                <ui:VisualElement name="LQ_FrontHallway_South" class="single-door-horizontal unlocked double-door-horizontal" style="flex-grow: 1; position: absolute; top: 2073px; left: 1009px; width: 40px;"/>
+                            </ui:VisualElement>
+                            <ui:VisualElement name="LQMainHall" class="map-itself-absolute" style="flex-grow: 1; background-image: url(&quot;project://database/Assets/UI/Map%20System/Living%20Quarters/Living%20Quarters%20Main%20Hall.png?fileID=2800000&amp;guid=7ba2859d9dc2e13438e5e3724c9b01e0&amp;type=3#Living Quarters Main Hall&quot;);">
+                                <ui:VisualElement name="LQ_Center_North" class="single-door-horizontal double-door-horizontal notInteracted" style="flex-grow: 1; position: absolute; top: 1216px; left: 988px; width: 40px;"/>
+                                <ui:VisualElement name="LQ_Center_West" class="single-door-vertical notInteracted" style="flex-grow: 1; position: absolute; top: 1465px; left: 795px;"/>
+                                <ui:VisualElement name="LQ_Center_East" class="single-door-vertical notInteracted" style="flex-grow: 1; position: absolute; top: 1463px; left: 1258px;"/>
+                                <ui:VisualElement name="LQ_Center_South" class="single-door-horizontal notInteracted locked" style="flex-grow: 1; position: absolute; top: 1525px; left: 1011px;"/>
+                            </ui:VisualElement>
+                            <ui:VisualElement name="LeftElevator" class="map-itself-absolute" style="flex-grow: 1; background-image: url(&quot;project://database/Assets/UI/Map%20System/LeftElevator.png?fileID=2800000&amp;guid=3cf3db979526e674987772ad1c7e16e3&amp;type=3#LeftElevator&quot;);"/>
+                            <ui:VisualElement name="PatientRoomsHallway" class="map-itself-absolute" style="flex-grow: 1; background-image: url(&quot;project://database/Assets/UI/Map%20System/Patient%20Room%20Hallway%20AND%20ROOMS.png?fileID=2800000&amp;guid=1ce6099bb83089b44a2833fbeba20e88&amp;type=3#Patient Room Hallway AND ROOMS&quot;);">
+                                <ui:VisualElement name="MD_PatientRoomHallway_Room2" class="unlocked single-door-vertical" style="flex-grow: 1; position: absolute; top: 1655px; left: 483px;"/>
+                                <ui:VisualElement name="MD_PatientRoomHallway_Room1" class="unlocked single-door-vertical" style="flex-grow: 1; position: absolute; top: 1902px; left: 484px;"/>
+                                <ui:VisualElement name="MD_PatientRoomHallway_ToPuzzleRoom" class="unlocked single-door-vertical" style="flex-grow: 1; position: absolute; top: 2313px; left: 484px;"/>
+                                <ui:VisualElement name="MD_PatientRoomHallway_Elevator" class="unlocked single-door-vertical" style="flex-grow: 1; position: absolute; top: 1947px; left: 312px;"/>
+                            </ui:VisualElement>
+                            <ui:VisualElement name="SecurityRoom" class="map-itself-absolute" style="flex-grow: 1; background-image: url(&quot;project://database/Assets/UI/Map%20System/Security%20Room.png?fileID=2800000&amp;guid=e349cc20b0e1db44d8cdc7c134c4a2bf&amp;type=3#Security Room&quot;); display: flex;">
+                                <ui:VisualElement name="LQ_SecurityRoom" class="unlocked single-door-vertical" style="flex-grow: 1; position: absolute; top: 1755px; left: 910px;"/>
+                            </ui:VisualElement>
+                            <ui:VisualElement name="Admin" class="map-itself-absolute" style="flex-grow: 1; background-image: url(&quot;project://database/Assets/UI/Map%20System/Admin%20Room.png?fileID=2800000&amp;guid=5d5701a819ea8dd47a028653922cd923&amp;type=3#Admin Room&quot;);">
+                                <ui:VisualElement name="MD_Admin_South" class="unlocked single-door-horizontal" style="flex-grow: 1; position: absolute; top: 2179px; left: 649px;"/>
+                            </ui:VisualElement>
+                            <ui:VisualElement name="Power" style="flex-grow: 1; background-image: url(&quot;project://database/Assets/UI/Map%20System/Power%20Room.png?fileID=2800000&amp;guid=019e84db2a0e8ce42adde163fa68dba4&amp;type=3#Power Room&quot;);">
+                                <ui:VisualElement name="LQ_PowerRoom" class="unlocked single-door-vertical" style="flex-grow: 1; position: absolute; top: 1588px; left: 910px;"/>
+                            </ui:VisualElement>
+                            <ui:VisualElement name="LQLeftWing" class="map-itself-absolute" style="flex-grow: 1; background-image: url(&quot;project://database/Assets/UI/Map%20System/Living%20Quarters/Left%20Wing%20Rooms.png?fileID=2800000&amp;guid=552830f1b75d4b84aa28f1c1dc809ebf&amp;type=3#Left Wing Rooms&quot;);">
+                                <ui:VisualElement name="LQ_LeftRooms_East" class="single-door-vertical notInteracted" style="flex-grow: 1; position: absolute; top: 1465px; left: 795px;"/>
+                                <ui:VisualElement name="LQ_LeftRooms_Room4" class="single-door-horizontal notInteracted locked" style="flex-grow: 1; position: absolute; top: 1425px; left: 361px;"/>
+                                <ui:VisualElement name="LQ_LeftRooms_Room3" class="single-door-horizontal notInteracted locked" style="flex-grow: 1; position: absolute; top: 1425px; left: 481px;"/>
+                                <ui:VisualElement name="LQ_LeftRooms_Room2" class="single-door-horizontal notInteracted locked" style="flex-grow: 1; position: absolute; top: 1425px; left: 603px;"/>
+                                <ui:VisualElement name="LQ_LeftRooms_Room1" class="single-door-horizontal notInteracted locked" style="flex-grow: 1; position: absolute; top: 1425px; left: 728px;"/>
+                                <ui:Label text="Save" class="save-room-text" style="top: 1238px; left: 708px;"/>
+                            </ui:VisualElement>
+                            <ui:VisualElement name="LQRightWing" class="map-itself-absolute" style="flex-grow: 1; background-image: url(&quot;project://database/Assets/UI/Map%20System/Living%20Quarters/Right%20Wing%20Rooms.png?fileID=2800000&amp;guid=38d3f2eec17bdab4f92f9a8211fae3e6&amp;type=3#Right Wing Rooms&quot;);">
+                                <ui:VisualElement name="LQ_RightRooms_West" class="single-door-vertical notInteracted" style="flex-grow: 1; position: absolute; top: 1463px; left: 1258px;"/>
+                                <ui:VisualElement name="LQ_RightRooms_Room4" class="single-door-horizontal notInteracted locked" style="flex-grow: 1; position: absolute; top: 1425px; left: 1310px;"/>
+                                <ui:VisualElement name="LQ_RightRooms_Room3" class="single-door-horizontal notInteracted locked" style="flex-grow: 1; position: absolute; top: 1425px; left: 1428px;"/>
+                                <ui:VisualElement name="LQ_RightRooms_Room2" class="single-door-horizontal notInteracted locked" style="flex-grow: 1; position: absolute; top: 1425px; left: 1550px;"/>
+                                <ui:VisualElement name="LQ_RightRooms_Room1" class="single-door-horizontal notInteracted locked" style="flex-grow: 1; position: absolute; top: 1427px; left: 1666px;"/>
+                            </ui:VisualElement>
+                            <ui:VisualElement name="FinalHallway" class="map-itself-absolute" style="flex-grow: 1; height: auto; background-image: url(&quot;project://database/Assets/UI/Map%20System/Living%20Quarters/Final%20Hallway%20AND%20Rooms.png?fileID=2800000&amp;guid=bc38d440db8ced241abd57fa13dfacf1&amp;type=3#Final Hallway AND Rooms&quot;); display: flex;">
+                                <ui:VisualElement name="LQ_Room_Left" class="single-door-horizontal notInteracted locked" style="flex-grow: 1; position: absolute; top: 603px; left: 443px;"/>
+                                <ui:VisualElement name="LQ_Room_Right" class="single-door-horizontal notInteracted locked" style="flex-grow: 1; position: absolute; top: 603px; left: 723px;"/>
+                                <ui:VisualElement name="LQ_Final_Door" class="single-door-horizontal double-door-horizontal notInteracted" style="flex-grow: 1; position: absolute; top: 603px; left: 1026px; width: 40px;"/>
+                                <ui:VisualElement name="LQ_Cafeteria" class="single-door-horizontal double-door-horizontal notInteracted" style="flex-grow: 1; position: absolute; top: 778px; left: 514px; width: 40px;"/>
+                                <ui:VisualElement name="LQ_Final_Hallway_Door" class="single-door-horizontal double-door-horizontal notInteracted" style="flex-grow: 1; position: absolute; top: 1216px; left: 988px; width: 40px;"/>
+                            </ui:VisualElement>
+                            <ui:VisualElement name="Cafeteria" class="map-itself-absolute" style="flex-grow: 1; height: auto; background-image: url(&quot;project://database/Assets/UI/Map%20System/Living%20Quarters/Cafeteria.png?fileID=2800000&amp;guid=db74783d458fab645b22aede51f98d7a&amp;type=3#Cafeteria&quot;);"/>
+                            <ui:VisualElement name="FinalRoom" class="map-itself-absolute" style="flex-grow: 1; height: auto; background-image: url(&quot;project://database/Assets/UI/Map%20System/Living%20Quarters/Final%20Room.png?fileID=2800000&amp;guid=d680fdfc6db9be94bb32fee38a6813ee&amp;type=3#Final Room&quot;);"/>
+                        </ui:VisualElement>
+                        <ui:VisualElement name="map-content-2nd" style="flex-grow: 1; width: 2000px; height: 1608px; display: none; margin-left: -158px;">
+                            <ui:VisualElement name="2ndBottomLeftElevator" class="map-itself-absolute" style="flex-grow: 1; background-image: url(&quot;project://database/Assets/UI/Map%20System/2nd%20Foor/2ndBottomLeftElevator.png?fileID=2800000&amp;guid=8800b80382160994cbe061ae3147b18e&amp;type=3#2ndBottomLeftElevator&quot;);"/>
+                            <ui:VisualElement name="2ndLeftElevator" class="map-itself-absolute" style="flex-grow: 1; background-image: url(&quot;project://database/Assets/UI/Map%20System/2nd%20Foor/2ndLeftElevator.png?fileID=2800000&amp;guid=bd46240c7e348834c809a4a6dd0dc051&amp;type=3#2ndLeftElevator&quot;);"/>
+                            <ui:VisualElement name="2ndUpperRightElevator" class="map-itself-absolute" style="flex-grow: 1; background-image: url(&quot;project://database/Assets/UI/Map%20System/2nd%20Foor/2ndUpperRightElevator.png?fileID=2800000&amp;guid=2078c5d082ec0ae45aa58dc32800770e&amp;type=3#2ndUpperRightElevator&quot;);"/>
+                            <ui:VisualElement name="2ndOuterHallway" class="map-itself-absolute" style="flex-grow: 1; background-image: url(&quot;project://database/Assets/UI/Map%20System/2nd%20Foor/2ndOuterHallway.png?fileID=2800000&amp;guid=2b5d6d315f8483b4b90578711025e129&amp;type=3#2ndOuterHallway&quot;);">
+                                <ui:VisualElement name="2nd_West_Elevator" class="unlocked single-door-vertical" style="flex-grow: 1; position: absolute; top: 521px; left: 412px;"/>
+                                <ui:VisualElement name="2nd_ToSouthWestElevator" class="unlocked single-door-vertical" style="flex-grow: 1; position: absolute; top: 1161px; left: 561px;"/>
+                                <ui:VisualElement name="2nd_East_Elevator" class="unlocked single-door-vertical" style="flex-grow: 1; position: absolute; top: 342px; left: 1476px;"/>
+                                <ui:VisualElement name="2nd_ToInnerHallway" class="unlocked single-door-vertical" style="flex-grow: 1; position: absolute; top: 340px; left: 1215px;"/>
+                                <ui:VisualElement name="2nd_ToInnerHallway_Shorutcut" class="unlocked single-door-vertical" style="flex-grow: 1; position: absolute; top: 882px; left: 1215px;"/>
+                            </ui:VisualElement>
+                            <ui:VisualElement name="2ndInnerHallway" class="map-itself-absolute" style="flex-grow: 1; background-image: url(&quot;project://database/Assets/UI/Map%20System/2nd%20Foor/2ndInnerHallway.png?fileID=2800000&amp;guid=368d502057d03364898e960a25b37037&amp;type=3#2ndInnerHallway&quot;);">
+                                <ui:VisualElement name="2nd_InnerHallway_ToOperatingRoom_Other" class="unlocked single-door-vertical" style="flex-grow: 1; position: absolute; top: 338px; left: 1063px;"/>
+                                <ui:VisualElement name="2nd_InnerHallway_ToOuterHallway" class="unlocked single-door-vertical" style="flex-grow: 1; position: absolute; top: 340px; left: 1215px;"/>
+                                <ui:VisualElement name="2nd_InnerHallway_ToOuterHallway_ShortCut" class="unlocked single-door-vertical" style="flex-grow: 1; position: absolute; top: 882px; left: 1215px;"/>
+                                <ui:VisualElement name="2nd_InnerHallway_ToICU" class="unlocked single-door-horizontal" style="flex-grow: 1; position: absolute; top: 977px; left: 763px;"/>
+                                <ui:VisualElement name="2nd_InnerHallway_ToOperatingRoom" class="unlocked single-door-horizontal" style="flex-grow: 1; position: absolute; top: 977px; left: 959px;"/>
+                            </ui:VisualElement>
+                            <ui:VisualElement name="2ndOperatingRoom" class="map-itself-absolute" style="flex-grow: 1; background-image: url(&quot;project://database/Assets/UI/Map%20System/2nd%20Foor/OperatingRoom.png?fileID=2800000&amp;guid=e6f8a7eea70d71b4cbefc92c6257699c&amp;type=3#OperatingRoom&quot;);">
+                                <ui:VisualElement name="2nd_Operating_ToInnerHallwayOther" class="unlocked single-door-vertical" style="flex-grow: 1; position: absolute; top: 338px; left: 1063px;"/>
+                                <ui:VisualElement name="2nd_Operating_ToSanitation" class="unlocked single-door-vertical" style="flex-grow: 1; position: absolute; top: 546px; left: 772px;"/>
+                                <ui:VisualElement name="2nd_Operating_ToICU" class="unlocked single-door-vertical" style="flex-grow: 1; position: absolute; top: 841px; left: 884px;"/>
+                                <ui:VisualElement name="2nd_Operating_ToInnerHallway" class="unlocked single-door-horizontal" style="flex-grow: 1; position: absolute; top: 977px; left: 959px;"/>
+                            </ui:VisualElement>
+                            <ui:VisualElement name="2ndSanitationRoom" class="map-itself-absolute" style="flex-grow: 1; background-image: url(&quot;project://database/Assets/UI/Map%20System/2nd%20Foor/SanitationRoom.png?fileID=2800000&amp;guid=dbb93b7eb2d89f647a8289af9678d369&amp;type=3#SanitationRoom&quot;);">
+                                <ui:VisualElement name="2nd_Sanitation_ToOperating" class="unlocked single-door-vertical" style="flex-grow: 1; position: absolute; top: 546px; left: 772px;"/>
+                                <ui:VisualElement name="2nd_Sanitation_ToICU" class="unlocked single-door-horizontal" style="flex-grow: 1; position: absolute; top: 648px; left: 649px;"/>
+                            </ui:VisualElement>
+                            <ui:VisualElement name="2ndICU" class="map-itself-absolute" style="flex-grow: 1; background-image: url(&quot;project://database/Assets/UI/Map%20System/2nd%20Foor/ICU.png?fileID=2800000&amp;guid=aa368badc03aa074cab527e7ad783113&amp;type=3#ICU&quot;);">
+                                <ui:VisualElement name="2nd_ICU_ToSanitation" class="unlocked single-door-horizontal" style="flex-grow: 1; position: absolute; top: 648px; left: 649px;"/>
+                                <ui:VisualElement name="2nd_ICU_ToOperating" class="unlocked single-door-vertical" style="flex-grow: 1; position: absolute; top: 841px; left: 884px;"/>
+                                <ui:VisualElement name="2nd_ICU_ToInnerHallway" class="unlocked single-door-horizontal" style="flex-grow: 1; position: absolute; top: 977px; left: 763px;"/>
+                                <ui:Label text="Save" class="save-room-text" style="top: 674px; left: 707px;"/>
+                            </ui:VisualElement>
+                        </ui:VisualElement>
+                    </ui:ScrollView>
+                    <ui:VisualElement name="filter" class="crt" style="flex-grow: 1; position: absolute; width: 100%; height: 100%; min-height: 100%; max-height: 100%; max-width: 100%; min-width: 100%;"/>
+                </ui:VisualElement>
+                <ui:VisualElement style="flex-grow: 1; position: absolute; height: 313px; width: 126px; top: 82px; left: 114px;">
+                    <ui:VisualElement name="up-floor" style="flex-grow: 1; background-image: url(&quot;project://database/Assets/UI%20Toolkit/UnityThemes/UnityDefaultRuntimeTheme.tss?fileID=6936960519852013934&amp;guid=ed2aba92da6edc747bae99ec8e320aab&amp;type=3#arrow-up@2x&quot;);"/>
+                    <ui:VisualElement name="down-floor" style="flex-grow: 1; background-image: url(&quot;project://database/Assets/UI%20Toolkit/UnityThemes/UnityDefaultRuntimeTheme.tss?fileID=-1304905567622442630&amp;guid=ed2aba92da6edc747bae99ec8e320aab&amp;type=3#arrow-down@2x&quot;);"/>
+                </ui:VisualElement>
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+    <ui:VisualElement name="VisualElement" style="flex-grow: 1; display: none;"/>
+    <ui:VisualElement name="everything" style="flex-grow: 1; position: absolute; display: none;">
+        <ui:VisualElement picking-mode="Ignore" name="mobile-overlay" style="flex-grow: 1; position: absolute; top: 0; left: 0; bottom: 0; right: 0;"/>
+        <ui:VisualElement name="pause" style="flex-grow: 1; position: absolute; width: 80px; height: 80px; border-top-left-radius: 40px; border-top-right-radius: 40px; border-bottom-right-radius: 40px; border-bottom-left-radius: 40px; -unity-background-image-tint-color: rgba(255, 255, 255, 0.57); background-image: url(&quot;project://database/Assets/Icons/pause.png?fileID=2800000&amp;guid=fc176d51b44ecfe4ab3619c346c63179&amp;type=3#pause&quot;); background-color: rgba(255, 255, 255, 0.05); top: 20px; left: 20px; background-size: 101% 100%;"/>
+        <ui:VisualElement name="interact" style="flex-grow: 1; position: absolute; width: 80px; height: 80px; border-top-left-radius: 40px; border-top-right-radius: 40px; border-bottom-right-radius: 40px; border-bottom-left-radius: 40px; -unity-background-image-tint-color: rgba(255, 255, 255, 0.84); background-image: url(&quot;project://database/Assets/Icons/interact.png?fileID=2800000&amp;guid=b8cd002866ea6224ab57793ad6fea418&amp;type=3#interact&quot;); background-color: rgba(255, 255, 255, 0.05); top: 655px; left: 1277px; background-size: 80% 80%;"/>
+        <ui:VisualElement name="map" style="flex-grow: 1; position: absolute; width: 100px; height: 100px; border-top-left-radius: 40px; border-top-right-radius: 40px; border-bottom-right-radius: 40px; border-bottom-left-radius: 40px; -unity-background-image-tint-color: rgba(255, 255, 255, 0.88); background-image: url(&quot;project://database/Assets/Icons/map.png?fileID=2800000&amp;guid=cb06f2fa4669cba4c986a1aef2f3abf8&amp;type=3#map&quot;); background-color: rgba(255, 255, 255, 0.05); top: 20px; left: auto; background-size: 74% 74%; right: -1901px;"/>
+        <ui:VisualElement name="inventory" style="flex-grow: 1; position: absolute; width: 100px; height: 100px; border-top-left-radius: 40px; border-top-right-radius: 40px; border-bottom-right-radius: 40px; border-bottom-left-radius: 40px; -unity-background-image-tint-color: rgba(255, 255, 255, 0.84); background-image: url(&quot;project://database/Assets/Icons/backpack.png?fileID=2800000&amp;guid=87878815728118443bbd4af687f63508&amp;type=3#backpack&quot;); background-color: rgba(255, 255, 255, 0.05); top: 182px; left: 1798px; background-size: 74% 74%; right: -1901px; bottom: auto;"/>
+    </ui:VisualElement>
+</ui:UXML>

@@ -1,0 +1,261 @@
+<style>
+    *{
+        text-align: center;
+    }
+    body
+    {
+    }
+    table
+    {
+        border-collapse: collapse;
+        margin-left: 50%;
+        translate: -50%;
+    }
+    table, th, .subject
+    {
+        width: 980px;
+        padding-inline: 15px;
+        padding-block: 5px;
+        border: solid black 1px;
+        
+        
+    }
+    .time
+    {
+        font-size: 14px;
+        width: 100px;
+        padding-inline: 10px;
+        border: solid black 1px;
+    }
+    .empty
+    {
+        border: solid black 1px;
+    }
+    #AAP
+    {
+        background-color: aqua;
+    }
+    #IT209
+    {
+        background-color: rgb(250, 125, 125);
+    }
+    #IT208
+    {
+        background-color: rgb(160, 136, 206);
+    }
+    #IT210
+    {
+        background-color: rgb(156, 252, 204);
+    }
+    #IT207
+    {
+        background-color: rgb(243, 241, 148);
+    }
+    #IT211
+    {
+        background-color: rgb(136, 133, 156);
+    }
+    #PE
+    {
+        background-color: rgb(248, 108, 108);
+    }
+    #IT206
+    {
+        background-color: rgb(255, 181, 255);
+    }
+    #FL
+    {
+        background-color: rgb(172, 180, 180);
+    }
+    .empty
+    {
+        background-color: rgb(204, 204, 204);
+    }
+    .time
+    {
+        background-color: rgb(241, 241, 241);
+    }
+    .day
+    {
+        background-color: rgb(201, 188, 216);
+    }
+    
+</style>
+
+<html>
+    <title>
+        schedule
+    </title>
+    <head>
+        <link rel="stylesheet" href="/navigBarStyle.css">
+    </head>
+    <body>
+        
+        <ul id="navBar" class="navUl">
+            <li class="mainList"><a href="/Profile/Home.html">Home</a></li>
+            <li class="mainList"><a href="">News</a></li>
+            <li class="mainList"><a href="">Announcement</a></li>
+            <li class="mainList"><a href="/AboutUs/AboutUs.html">About Us</a></li>
+            <li class="mainList"><a href="/ContactUs/ContactUs.html" >Contact Us</a></li>
+            <li class="mainList"><a href="">Settings</a>
+                <ul class="navUl">
+                    <li><a href="">User</a>
+                        <ul class="navUl">
+                            <li><a href="/Lists/List_Profile.html">Profile</a></li>
+                            <li><a href="/Lists/List_Schedule.html">Schedule</a></li>
+                            <li><a href="/Lists/List_User.html">Accounts</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+<div style="height: 60px;"></div>
+
+        <table>
+            <th class="day">Time</th>
+            <th class="day">Monday</th>
+            <th class="day">Tuesday</th>
+            <th class="day">Wednesday</th>
+            <th class="day">Thursday</th>
+            <th class="day">Friday</th>
+            <tr>
+                <td class="time">7:00 am - 7:30 am</td>
+                <td id="IT209" class="subject" rowspan="6">IT 209 Introduction to Data Analytics(IT2) <li>Lab</li> </td>
+                <td id="PE" class="subject" rowspan="4">PE 13 PATHFIT 4 (Valencia Hall)<li>Physical Activity</li></td>
+                <td id="IT206" class="subject" rowspan="6">IT 206 Event-Driven Programming (SDL2)<li>Lab</li></td>
+                <td id="IT206" class="subject" rowspan="4">IT 206 Event-Driven Programming (SDL2)<li>Lecture</li></td>
+                <td id="IT210" class="subject" rowspan="4">IT 210 Networking 2 (CT 9)<li>Lecture</li></td>
+            </tr>
+            <tr>
+                <td class="time">7:30 am - 8:00 am</td>
+            </tr>
+            <tr>
+                <td class="time">8:00 am - 8:30 am</td>
+            </tr>
+            <tr>
+                <td class="time">8:30 am - 9:00 am</td>
+            </tr>
+            <tr>
+                <td class="time">9:00 am - 9:30 am</td>
+                <td id="IT211" class="subject" rowspan="4">IT 211 Web Systems and Technologies (SDL4)<li>Lecture</li></td>
+                <td class="empty"></td>
+                <td class="empty"></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="time">9:30 am - 10:00 am</td>
+                <td class="empty"></td>
+                <td class="empty"></td>
+            </tr>
+            <tr>
+                <td class="time">10:00 am - 10:30 am</td>
+
+                <td id="IT210" class="subject" rowspan="6">IT 210 Networking 2 (CT 9)<li>Lab</li></td>
+                <td class="empty"></td>
+                <td class="empty"></td>
+                <td class="empty"></td>
+            </tr>
+            <tr>
+                <td class="time">10:30 am - 11:00 am</td>
+                <td class="empty"></td>
+                <td class="empty"></td>
+                <td class="empty"></td>
+            </tr>
+            <tr>
+                <td class="time">11:00 am - 11:30 am</td>
+                <td class="empty"></td>
+                <td id ="IT209" class="subject" rowspan="4">IT 209 Introduction to Data Analytics(IT2) Lecture<li>Lecture</li></td>
+                <td class="empty"></td>
+                <td class="empty"></td>
+            </tr>
+            <tr>
+                <td class="time">11:30 am - 12:00 pm</td>
+                <td id = "AAP" class="subject" rowspan="3">AAP 101 Art Appreciation<li>Drawing</li></td>
+                <td class="empty"></td>
+                <td class="empty"></td>
+            </tr>
+            <tr>
+                <td class="time">12:00 pm - 12:30 pm</td>
+                <td id="IT211" class="subject" rowspan="6">IT 211 Web Systems and Technologies (SDL4)<li>Lab</li></td>
+                <td class="empty"></td>
+            </tr>
+            <tr>
+                <td class="time">12:30 pm - 1:00 pm</td>
+                <td class="empty"></td>
+            </tr>
+            <tr>
+                <td class="time">1:00 pm - 1:30 pm</td>
+                <td id = "AAP" class="subject" rowspan="3">AAP 101 Art Appreciation<li>Drawing</li></td>
+                <td id = "IT208" class="subject" rowspan="6">IT 208 Advanced Database Systems Lab<li>Lab</li></td>
+                <td id="IT207" class="subject" rowspan="6">IT 207 Integrative Programming and Technologies (IT9)<li>Lab</li></td>
+                <td class="empty"></td>
+            </tr>
+            <tr>
+                <td class="time">1:30 pm - 2:00 pm</td>
+                <td class="empty"></td>
+            </tr>
+            <tr>
+                <td class="time">2:00 pm - 2:30 pm</td>
+                <td class="empty"></td>
+            </tr>
+            <tr>
+                <td class="time">2:30 pm - 3:00 pm</td>
+                <td class="empty"></td>
+                <td class="empty"></td>
+            </tr>
+            <tr>
+                <td class="time">3:00 pm - 3:30 pm</td>
+                
+                <td class="empty"></td>
+                <td id="IT207" class="subject" rowspan="4">IT 207 Integrative Programming and Technologies (IT9)<li>Lecture</li></td>
+                <td class="empty"></td>
+                
+            </tr>
+            <tr>
+                <td class="time">3:30 pm - 4:00 pm</td>
+                <td class="empty"></td>
+                <td class="empty"></td>
+            </tr>
+            <tr>
+                <td class="time">4:00 pm - 4:30 pm</td>
+                <td id = "IT208" class="subject" rowspan="4">IT 208 Advanced Database Systems Lab1<li>Lecture</li></td>
+                <td class="empty"></td>
+                <td class="empty"></td>
+                <td id="FL" class="subject" rowspan="6">FL 101 Foreign Language (Online)<li>Quiz</li></td>
+                
+            </tr>
+            <tr>
+                <td class="time">4:30 pm - 5:00 pm</td>
+                <td class="empty"></td>
+                <td class="empty"></td>
+            </tr>
+            <tr>
+                <td class="time">5:00 pm - 5:30 pm</td>
+                <td class="empty"></td>
+                <td class="empty"></td>
+                <td class="empty"></td>
+            </tr>
+            <tr>
+                <td class="time">5:30 pm - 6:00 pm</td>
+                <td class="empty"></td>
+                <td class="empty"></td>
+                <td class="empty"></td>
+            </tr>
+            <tr>
+                <td class="time">6:00 pm - 6:30 pm</td>
+                <td class="empty"></td>
+                <td class="empty"></td>
+                <td class="empty"></td>
+                <td class="empty"></td>
+            </tr>
+            <tr>
+                <td class="time">6:30 pm - 7:00 pm</td>
+                <td class="empty"></td>
+                <td class="empty"></td>
+                <td class="empty"></td>
+                <td class="empty"></td>
+            </tr>
+        </table>
+
+    </body>
+</html>

@@ -1,0 +1,36 @@
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="True">
+    <Style src="project://database/Assets/UI/PlayerinventoryStyle.uss?fileID=7433441132597879392&amp;guid=9ab4e420ebfb2894abc02169d07235c8&amp;type=3#PlayerinventoryStyle"/>
+    <ui:VisualElement name="parent" enabled="true" class="parent-close" style="flex-grow: 1; width: 100%; flex-direction: column; align-items: stretch; justify-content: space-around; align-self: stretch; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0; background-color: rgb(63, 63, 67); opacity: 1; transition-property: translate; transition-duration: 0.2s; transition-timing-function: linear; background-image: url(&quot;project://database/Assets/Render_Textures/UI/metal.jpg?fileID=2800000&amp;guid=d565b410e1788b0498784eaed7b3dd61&amp;type=3#metal&quot;); -unity-background-image-tint-color: rgb(79, 79, 79);">
+        <ui:VisualElement name="header" style="flex-grow: 1; height: 100px; flex-direction: row; margin-top: 10px; width: 100%; align-items: center; align-content: flex-start; justify-content: center;">
+            <ui:Label text="Item Box&#10;" name="page-label" emoji-fallback-support="false" class="header-label" style="font-size: 35px; text-shadow: 0 0 0 rgba(0, 0, 0, 0); width: 30%; -unity-text-align: middle-center;"/>
+            <ui:VisualElement name="close-itembox" style="flex-grow: 1; position: absolute; top: 5px; left: 63px; right: auto; bottom: auto; width: 50px; height: 50px; background-image: url(&quot;project://database/Assets/UI%20Toolkit/UnityThemes/UnityDefaultRuntimeTheme.tss?fileID=5866165431930342980&amp;guid=ed2aba92da6edc747bae99ec8e320aab&amp;type=3#Remove@2x&quot;);"/>
+        </ui:VisualElement>
+        <ui:VisualElement name="inventory-parent" style="flex-grow: 1; flex-direction: row; padding-top: 10px; padding-right: 60px; padding-bottom: 10px; padding-left: 60px; transition-duration: 0.3s; transition-timing-function: linear; transition-property: translate; height: 100%;">
+            <ui:VisualElement name="inventory" enabled="true" style="flex-grow: 1; width: 100%; flex-direction: column; align-items: center; justify-content: space-around; align-self: stretch; padding-top: 0; padding-right: 60px; padding-bottom: 0; padding-left: 0; background-color: rgba(63, 63, 67, 0); opacity: 1; transition-property: all; transition-duration: 0.3s; transition-timing-function: linear; min-width: 100%; max-width: 100%; margin-right: 0;">
+                <ui:VisualElement name="inner-border" style="flex-grow: 1; background-color: rgba(63, 63, 68, 0); flex-shrink: 1; width: 100%; height: 100px; max-width: 100%; max-height: 100%; min-height: 100%; min-width: 100%;">
+                    <ui:VisualElement name="items-panel" style="flex-grow: 1; align-self: flex-start; width: 100%; height: 100%; flex-direction: row; -unity-background-image-tint-color: rgb(34, 34, 34); justify-content: space-between; max-height: 100%; min-height: 100%; padding-bottom: 9px;">
+                        <ui:VisualElement name="inventory" class="border parent-open" style="flex-grow: 0; flex-shrink: 0; align-items: center; justify-content: center; flex-direction: row; width: 40%; margin-top: 0; margin-right: 30px; margin-bottom: 30px; margin-left: 0; background-color: rgb(23, 23, 25); height: 70%;">
+                            <ui:VisualElement name="grid" style="flex-grow: 0; flex-direction: row; flex-wrap: wrap; height: 100%; justify-content: center; align-items: center; width: 95%; flex-shrink: 0; align-content: center; aspect-ratio: 1; max-height: 100%;">
+                                <ui:VisualElement name="VisualElement" class="itemSlotParent" style="flex-grow: 1; display: none; background-image: none;">
+                                    <ui:VisualElement class="itemSlot" style="flex-grow: 1; background-image: url(&quot;project://database/Assets/_Sprites/Cutscene/Final_01%201.png?fileID=2800000&amp;guid=c7e104834677b7b42871136f3098cf2b&amp;type=3#Final_01 1&quot;);"/>
+                                </ui:VisualElement>
+                            </ui:VisualElement>
+                            <ui:VisualElement name="filter" class="crt" style="flex-grow: 1; position: absolute; width: 100%; height: 100%; min-height: 100%; max-height: 100%; max-width: 100%; min-width: 100%; background-color: rgb(24, 24, 25);"/>
+                        </ui:VisualElement>
+                        <ui:VisualElement name="item-box-section" class="border" style="flex-grow: 1; width: 60%; background-color: rgb(23, 23, 25); margin-top: 0; margin-right: 0; margin-bottom: 30px; margin-left: 30px; max-width: 60%; justify-content: center; height: auto;">
+                            <ui:ScrollView>
+                                <ui:VisualElement name="item-box" style="flex-grow: 1;">
+                                    <ui:VisualElement name="itemBoxSlot" class="itemBoxSlot" style="flex-grow: 1;">
+                                        <ui:VisualElement name="image" class="itemBoxImage" style="flex-grow: 1;"/>
+                                        <ui:Label text="12x" name="Label" class="itemBoxText"/>
+                                    </ui:VisualElement>
+                                </ui:VisualElement>
+                            </ui:ScrollView>
+                            <ui:VisualElement name="filter" class="crt" style="flex-grow: 1; position: absolute; width: 100%; height: 100%; min-height: 100%; max-height: 100%; max-width: 100%; min-width: 100%; background-color: rgb(24, 24, 25);"/>
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                </ui:VisualElement>
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

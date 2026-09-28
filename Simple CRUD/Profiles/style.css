@@ -1,0 +1,107 @@
+table > *{
+    font-family: sans-serif;
+    
+}
+body{
+    
+    background-image: url(/Profile/images/Arcane.S01E04.Happy.Progress.Day01.42.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+table{
+border: solid black;
+margin-left: 50%;
+translate: -50%;
+width: 600px;
+border-collapse: collapse;
+background-color: white;
+}
+.whiteHeader{
+font-size: 20px;
+font-weight: bolder;
+}
+.blackHeader{
+font-size: 17px;
+font-weight: bolder;
+}
+.leftBanner{
+width: 150px;
+text-align: center;
+}
+.justify{
+padding-left: 30px;
+text-align: justify;
+}
+.emptyListStyle{
+list-style: none;
+}
+.otherInfo{
+font-weight: bold;
+}
+.darkBg
+{
+background-color: rgb(49, 49, 49);
+color: white;
+}
+.icon{
+border-radius: 100%;
+width: 20px; 
+position:absolute;
+margin-top: -3px; 
+margin-left: 5px;
+}
+.contactIcon{
+margin-right: 500px;
+}
+.small{
+    font-size: smaller;
+    font-weight: lighter;
+}
+.big{
+    font-size: medium;
+    font-weight: bold;
+}
+span{
+position: relative;
+}
+.center{
+position: absolute;
+text-align: justify;
+padding-left: 10px;
+}
+#profileImg{
+border-bottom-left-radius: 200%;
+border-bottom-right-radius: 200%;
+height: 200px;
+align-items: center;
+text-align: center;
+}
+#contactInfo{
+text-align: left;
+position: relative;
+}
+#education{
+
+padding-bottom: 90px;
+}
+#description{
+    padding-right: 35px;
+    padding-bottom: 30px; 
+    text-align: justify;
+}
+#profilePic{
+border-radius: 100%;
+border: 10px solid rgb(255,255,255);
+width: 115px;
+}
+#bottomCircle{
+border-top-left-radius: 200%;
+border-top-right-radius: 200%;
+}
+#name{
+padding-top: 12px;
+height: 70px;
+}
+#aboutMe{
+padding-top: 30px;
+}

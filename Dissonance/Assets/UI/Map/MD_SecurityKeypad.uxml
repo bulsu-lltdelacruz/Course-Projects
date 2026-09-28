@@ -1,0 +1,57 @@
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI/Map/MD_SecurityKeypad.uss?fileID=7433441132597879392&amp;guid=d835fba863da9b74b860784ab9fe0d1e&amp;type=3#MD_SecurityKeypad"/>
+    <ui:VisualElement name="parent" style="flex-grow: 1; justify-content: center; background-color: rgba(0, 0, 0, 0.8); display: none;">
+        <ui:VisualElement name="keypad" style="flex-grow: 1; background-image: none; width: 30%; height: 90%; max-height: 90%; align-self: center; align-content: flex-start; align-items: stretch; justify-content: flex-start; background-color: rgb(200, 205, 207); border-top-width: 20px; border-right-width: 20px; border-bottom-width: 20px; border-left-width: 20px; border-left-color: rgb(138, 144, 147); border-right-color: rgb(138, 143, 147); border-top-color: rgb(158, 164, 168); border-bottom-color: rgb(158, 164, 168);">
+            <ui:VisualElement name="screen" style="flex-grow: 1; height: 30%; max-height: 30%; margin-top: 20px; margin-right: 20px; margin-bottom: 20px; margin-left: 20px; border-top-width: 15px; border-right-width: 15px; border-bottom-width: 15px; border-left-width: 15px; border-left-color: rgb(138, 144, 147); border-right-color: rgb(138, 144, 147); border-top-color: rgb(158, 164, 168); border-bottom-color: rgb(158, 164, 168); background-color: rgb(75, 75, 75); justify-content: center;">
+                <ui:VisualElement name="logo" style="flex-grow: 1; position: absolute; top: 0; left: 0; right: auto; bottom: auto; background-image: url(&quot;project://database/Assets/UI%20Toolkit/UnityThemes/UnityDefaultRuntimeTheme.tss?fileID=-1304905567622442630&amp;guid=ed2aba92da6edc747bae99ec8e320aab&amp;type=3#arrow-down@2x&quot;); width: 50px; height: 50px;"/>
+                <ui:Label text="123434" name="screen-text" style="align-items: stretch; align-self: auto; align-content: auto; justify-content: flex-start; font-size: 75px; border-left-width: 40px; color: rgb(255, 255, 255); -unity-font-definition: url(&quot;project://database/Packages/com.unity.render-pipelines.core/Runtime/Debugging/Prefabs/Fonts/PerfectDOSVGA437.ttf?fileID=12800000&amp;guid=74a5091d8707f334b9a5c31ef71a64ba&amp;type=3#PerfectDOSVGA437&quot;);"/>
+            </ui:VisualElement>
+            <ui:VisualElement name="keypad" style="flex-grow: 1; padding-left: 18px; padding-right: 18px; justify-content: center;">
+                <ui:VisualElement name="row-1" class="row" style="flex-grow: 1;">
+                    <ui:VisualElement name="VisualElement" class="key" style="flex-grow: 1;">
+                        <ui:Label text="1" class="key-text"/>
+                    </ui:VisualElement>
+                    <ui:VisualElement name="VisualElement" class="key" style="flex-grow: 1;">
+                        <ui:Label text="2" class="key-text"/>
+                    </ui:VisualElement>
+                    <ui:VisualElement name="VisualElement" class="key" style="flex-grow: 1;">
+                        <ui:Label text="3" class="key-text"/>
+                    </ui:VisualElement>
+                </ui:VisualElement>
+                <ui:VisualElement name="row-2" class="row" style="flex-grow: 1;">
+                    <ui:VisualElement name="VisualElement" class="key" style="flex-grow: 1;">
+                        <ui:Label text="4" class="key-text"/>
+                    </ui:VisualElement>
+                    <ui:VisualElement name="VisualElement" class="key" style="flex-grow: 1;">
+                        <ui:Label text="5" class="key-text"/>
+                    </ui:VisualElement>
+                    <ui:VisualElement name="VisualElement" class="key" style="flex-grow: 1;">
+                        <ui:Label text="6" class="key-text"/>
+                    </ui:VisualElement>
+                </ui:VisualElement>
+                <ui:VisualElement name="row-3" class="row" style="flex-grow: 1;">
+                    <ui:VisualElement name="VisualElement" class="key" style="flex-grow: 1;">
+                        <ui:Label text="7" class="key-text"/>
+                    </ui:VisualElement>
+                    <ui:VisualElement name="VisualElement" class="key" style="flex-grow: 1;">
+                        <ui:Label text="8" enable-rich-text="true" class="key-text"/>
+                    </ui:VisualElement>
+                    <ui:VisualElement name="VisualElement" class="key" style="flex-grow: 1;">
+                        <ui:Label text="9" class="key-text"/>
+                    </ui:VisualElement>
+                </ui:VisualElement>
+                <ui:VisualElement name="row-4" class="row" style="flex-grow: 1;">
+                    <ui:VisualElement name="exit" class="key" style="flex-grow: 1;">
+                        <ui:Label text="ext" class="key-text"/>
+                    </ui:VisualElement>
+                    <ui:VisualElement name="VisualElement" class="key" style="flex-grow: 1;">
+                        <ui:Label text="0" class="key-text"/>
+                    </ui:VisualElement>
+                    <ui:VisualElement name="enter" class="key" style="flex-grow: 1;">
+                        <ui:Label text="ent" class="key-text"/>
+                    </ui:VisualElement>
+                </ui:VisualElement>
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

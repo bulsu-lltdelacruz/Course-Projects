@@ -1,0 +1,79 @@
+:root {
+}
+
+.menu-button {
+    height: auto;
+    background-color: rgba(0, 0, 0, 0);
+    border-top-width: 0;
+    border-right-width: 0;
+    border-bottom-width: 0;
+    border-left-width: 0;
+    color: rgb(162, 162, 162);
+    font-size: 14%;
+    padding-right: 0;
+    padding-left: 0;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-top: 0;
+    margin-right: 130px;
+    margin-bottom: 0;
+    margin-left: 130px;
+    aspect-ratio: auto;
+    max-height: none;
+    min-height: auto;
+    align-items: stretch;
+    justify-content: flex-start;
+    align-self: center;
+}
+
+.text-font {
+    -unity-font-definition: url("project://database/Assets/Fonts/Montserrat-SemiBold.ttf?fileID=12800000&guid=39c8e013ef61ee04e85b7bb342aa5b8e&type=3#Montserrat-SemiBold");
+    font-size: 276%;
+    -unity-font-style: normal;
+    color: rgb(148, 148, 148);
+}
+
+.crt {
+}
+
+.menu-button:hover {
+    color: rgb(255, 255, 255);
+    -unity-font-style: normal;
+}
+
+.slider {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    font-size: 213%;
+    color: rgb(255, 255, 255);
+}
+
+.controls-label {
+    border-top-width: 0;
+    border-top-color: rgba(255, 255, 255, 0);
+    border-bottom-color: rgba(255, 255, 255, 0);
+    border-bottom-width: 0;
+    -unity-text-align: upper-left;
+    white-space: normal;
+    text-overflow: clip;
+    left: auto;
+    width: 70%;
+    border-right-width: 0;
+    border-left-width: 0;
+    border-left-color: rgba(255, 255, 255, 0);
+    border-right-color: rgba(255, 255, 255, 0);
+}
+
+.control-label-last {
+    border-bottom-color: rgba(0, 0, 0, 0);
+    width: 30%;
+    -unity-text-align: upper-right;
+}
+
+.control-label-parent {
+    flex-direction: row;
+    width: 573px;
+    border-bottom-color: rgb(255, 255, 255);
+    border-top-width: 0;
+    border-bottom-width: 1px;
+}

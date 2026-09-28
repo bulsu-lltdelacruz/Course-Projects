@@ -1,0 +1,41 @@
+:root {
+}
+
+.choicesButton {
+    min-width: auto;
+    background-color: rgba(0, 0, 0, 0.49);
+    transform-origin: top;
+    color: rgb(255, 255, 255);
+    margin-top: 0;
+    -unity-font-definition: url("project://database/Assets/Fonts/Montserrat-SemiBold.ttf?fileID=12800000&guid=39c8e013ef61ee04e85b7bb342aa5b8e&type=3#Montserrat-SemiBold");
+    font-size: 35px;
+    -unity-text-align: upper-center;
+    border-top-width: 0;
+    border-right-width: 0;
+    border-bottom-width: 0;
+    border-left-width: 0;
+    border-left-color: rgba(176, 176, 176, 0);
+    border-right-color: rgba(176, 176, 176, 0);
+    border-top-color: rgba(176, 176, 176, 0);
+    border-bottom-color: rgba(176, 176, 176, 0);
+}
+
+.text {
+    font-size: 40px;
+    -unity-font-definition: url("project://database/Assets/Fonts/Montserrat-SemiBold.ttf?fileID=12800000&guid=39c8e013ef61ee04e85b7bb342aa5b8e&type=3#Montserrat-SemiBold");
+    letter-spacing: -5px;
+    -unity-font-style: normal;
+    -unity-text-auto-size: none;
+    color: rgb(255, 255, 255);
+    white-space: normal;
+    -unity-text-align: middle-center;
+}
+
+.hoverChoicesButton {
+    min-width: auto;
+    background-color: rgba(0, 0, 0, 0.49);
+    transform-origin: top;
+    color: rgb(255, 255, 255);
+    margin-top: 0;
+    -unity-font-definition: url("project://database/Assets/Fonts/Montserrat-SemiBold.ttf?fileID=12800000&guid=39c8e013ef61ee04e85b7bb342aa5b8e&type=3#Montserrat-SemiBold");
+}

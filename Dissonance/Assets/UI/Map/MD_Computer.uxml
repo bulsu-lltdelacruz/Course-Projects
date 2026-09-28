@@ -1,0 +1,52 @@
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI/Map/MD_Computer.uss?fileID=7433441132597879392&amp;guid=a422acc9e37bb7149a8e61894b1c3fc0&amp;type=3#MD_Computer"/>
+    <ui:VisualElement name="parent" class="background" style="flex-grow: 1; padding-top: 60px; padding-right: 60px; padding-bottom: 60px; padding-left: 60px; border-left-color: rgba(135, 135, 135, 0); border-right-color: rgba(135, 135, 135, 0); border-top-color: rgba(135, 135, 135, 0); border-bottom-color: rgba(135, 135, 135, 0); border-top-width: 0; border-right-width: 0; border-bottom-width: 0; border-left-width: 0; opacity: 1; display: none;">
+        <ui:Label text="* Please Insert a CD" class="note-bar-text"/>
+        <ui:VisualElement name="border" style="flex-grow: 1; background-color: rgba(255, 0, 0, 0); border-top-width: 29px; border-right-width: 29px; border-bottom-width: 29px; border-left-width: 29px; border-left-color: rgb(132, 134, 140); border-right-color: rgb(133, 135, 140); border-top-color: rgb(118, 118, 118); border-bottom-color: rgb(118, 118, 118); flex-direction: row; display: flex;">
+            <ui:ScrollView style="width: 50%; max-width: 50%; min-height: auto; background-color: rgb(173, 173, 173);">
+                <ui:VisualElement name="notes" class="inner" style="flex-grow: 1; border-right-width: 10px; border-right-color: rgb(168, 168, 168); max-width: initial; padding-top: 35px; padding-left: 30px; min-height: auto;">
+                    <ui:VisualElement name="VisualElement" class="note-bar" style="display: none;">
+                        <ui:Label text="Note #1" class="note-bar-text"/>
+                    </ui:VisualElement>
+                    <ui:VisualElement class="note-bar" style="display: none;">
+                        <ui:Label text="Note #1" class="note-bar-text"/>
+                    </ui:VisualElement>
+                    <ui:VisualElement class="note-bar" style="display: none;">
+                        <ui:Label text="Note #1" class="note-bar-text"/>
+                    </ui:VisualElement>
+                    <ui:VisualElement class="note-bar" style="display: none;">
+                        <ui:Label text="Note #1" class="note-bar-text"/>
+                    </ui:VisualElement>
+                    <ui:VisualElement class="note-bar" style="display: none;">
+                        <ui:Label text="Note #1" class="note-bar-text"/>
+                    </ui:VisualElement>
+                    <ui:VisualElement class="note-bar" style="display: none;">
+                        <ui:Label text="Note #1" class="note-bar-text"/>
+                    </ui:VisualElement>
+                    <ui:VisualElement class="note-bar" style="display: none;">
+                        <ui:Label text="Note #1" class="note-bar-text"/>
+                    </ui:VisualElement>
+                    <ui:VisualElement class="note-bar" style="display: none;">
+                        <ui:Label text="Note #1" class="note-bar-text"/>
+                    </ui:VisualElement>
+                </ui:VisualElement>
+            </ui:ScrollView>
+            <ui:VisualElement name="details" class="inner" style="flex-grow: 1; border-left-width: 10px; border-left-color: rgb(168, 168, 168); max-width: 50%;">
+                <ui:Label text="" name="title" class="note-bar-text" style="margin-top: 50px; padding-left: 50px; margin-right: 50px;"/>
+                <ui:ScrollView style="height: auto; max-height: 85%;">
+                    <ui:Label text="" name="content" class="note-bar-text" style="height: 100%; padding-top: 50px; padding-bottom: 50px; padding-left: 50px; white-space: normal; -unity-text-align: upper-left; padding-right: 50px;"/>
+                </ui:ScrollView>
+                <ui:Button text="Exit" name="cancel-inside" enable-rich-text="false" class="exit" style="max-width: 40%; width: 100%; max-height: 50%; position: absolute; top: auto; left: auto; right: 0; bottom: 0; font-size: 22px; padding-top: 16px; padding-right: 26px; padding-bottom: 16px; padding-left: 26px;"/>
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement name="popup-parent" picking-mode="Ignore" style="flex-grow: 1; position: absolute; top: 0; left: 0; right: 0; bottom: 0; background-color: rgba(89, 89, 89, 0.96); justify-content: center; align-items: center; display: flex; visibility: visible;">
+            <ui:VisualElement name="popup" style="flex-grow: 1; position: absolute; min-width: auto; width: 30%; height: 30%; top: auto; left: auto; right: auto; bottom: auto; background-color: rgb(173, 173, 173); border-top-width: 38px; border-top-color: rgb(135, 135, 135); justify-content: center; padding-left: 25px; padding-right: 25px;">
+                <ui:TextField label="Password" placeholder-text="password" name="password-field" style="-unity-font-definition: url(&quot;project://database/Packages/com.unity.render-pipelines.core/Runtime/Debugging/Prefabs/Fonts/PerfectDOSVGA437.ttf?fileID=12800000&amp;guid=74a5091d8707f334b9a5c31ef71a64ba&amp;type=3#PerfectDOSVGA437&quot;); font-size: 30px; margin-top: 56px; -unity-text-generator: standard; -unity-text-auto-size: none;"/>
+                <ui:VisualElement style="flex-grow: 1; max-width: none; max-height: 30%; flex-direction: row; justify-content: flex-start; margin-top: 45px;">
+                    <ui:Button text="Enter" name="enter" style="max-width: 40%; width: 100%; max-height: 50%; font-size: 25px;"/>
+                    <ui:Button text="Exit" name="cancel" enable-rich-text="false" class="exit" style="max-width: 40%; width: 100%; max-height: 50%; font-size: 25px;"/>
+                </ui:VisualElement>
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

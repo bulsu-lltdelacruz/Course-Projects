@@ -1,0 +1,58 @@
+*{
+    margin-inline : 0;
+}
+ul{
+    margin: 0;
+}
+p{
+    font-size: large;
+    margin-inline: 40px;
+    margin-bottom: 30px;
+}
+body{
+    
+    background-image: url(/Profile/images/Arcane.S01E04.Happy.Progress.Day01.42.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+img{
+    border-radius: 5%;
+    height: 335px;
+}
+textarea{
+    resize: none;
+}
+button{
+    margin-block: 20px;
+}
+#mapPic{
+    width: 350px;
+}
+#addressDiv{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    background-color: rgb(225, 225, 225);
+    width: 90%;
+    margin-inline: auto;
+    /*margin-b: auto;*/
+    /*margin-inline: 40px;*/
+}#ewanDiv{
+    margin-left: 15%;
+    margin-block: 30px;
+}
+.info{
+    margin-left: 0px;
+}
+.mapCol{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    height: 464px;
+    width: 50%;
+    background-color: #313131;
+}

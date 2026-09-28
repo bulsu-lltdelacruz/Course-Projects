@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd70665ce8edc344989cbee681088721, type: 3}
+  m_Name: PistolItemObject
+  m_EditorClassIdentifier: Assembly-CSharp::RangedItem
+  itemName: Pistol
+  image: {fileID: 2800000, guid: a8b0b7a67c363a3468dbd1562e4910b1, type: 3}
+  prefab: {fileID: 919132149155446097, guid: cfc7e4cc31f9bd74c8410efcc019b7c3, type: 3}
+  animationTrigger: isSmallWeapon
+  location: 0
+  itemType: 4
+  shouldDestroyAfterUse: 0
+  keyName: 0
+  equipType: 1
+  description: A 6mm pistol with a maximum magazine capacity of 10. It doesn't have
+    that much of power but it should be enough to defend myself for now.
+  requiredAmmoType: 1
+  ammoType: 0
+  maxAmmoPerReload: 8
+  maxStackSize: 1
+  damageFloor: 21
+  damageCeiling: 38
+  range: 0
+  attackDuration: 0
+  timingFloor: 0
+  timingCeiling: 0

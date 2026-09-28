@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8807318a16962ea4b9d17623a81cd301, type: 3}
+  m_Name: IK_Pistol
+  m_EditorClassIdentifier: Assembly-CSharp::IK_Base
+  equipPosition: {fileID: 0}
+  aimPosition: {fileID: 0}
+  equipLeftLocalPos: {x: 0.003670004, y: 0.006089998, z: -0.001259993}
+  equipLeftLocalRot: {x: 140.986, y: -158.878, z: -21.61401}
+  equipRightLocalPos: {x: 0.00583, y: -0.00278, z: -0.00121}
+  equipRightLocalRot: {x: -67.646, y: 27.166, z: 67.364}
+  aimLeftLocalPos: {x: 0.00542, y: 0.00219, z: -0.00414}
+  aimLeftLocalRot: {x: 48.302, y: 17.031, z: 112.307}
+  aimRightLocalPos: {x: 0.00574, y: -0.00357, z: -0.00076}
+  aimRightLocalRot: {x: -99.769, y: -14.71899, z: 108.211}
+  H_equipLeftLocalPos: {x: -0.412, y: 1.049588, z: -0.017}
+  H_equipLeftLocalRot: {x: 0, y: 0, z: 0}
+  H_equipRightLocalPos: {x: 0, y: 0, z: 0}
+  H_equipRightLocalRot: {x: 0, y: 0, z: 0}
+  H_aimLeftLocalPos: {x: -0.412, y: -158.878, z: -21.614}
+  H_aimLeftLocalRot: {x: 0, y: 0, z: 0}
+  H_aimRightLocalPos: {x: 0.771, y: 0, z: 0.184}
+  H_aimRightLocalRot: {x: 0, y: 0, z: 0}

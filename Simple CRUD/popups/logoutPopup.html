@@ -1,0 +1,57 @@
+<style>
+    *{
+    /*font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;*/
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+    body
+    {
+        background-color: black;
+    }
+    .popUp{
+        position: absolute;
+        width: 380px;
+        height: 250px;
+        background-color: white;
+    }
+    .popUp *{
+        display: block;
+        margin-inline: auto;
+        text-align: center;
+    }
+    .logOutOption{
+        cursor: pointer;
+        width: 85%;
+        height: 13%;
+        margin-block: 5px;
+        font-weight: 500;
+        border: solid black 1px; border-radius: 100px;
+        background-color: rgb(0, 0, 0);
+        color: white;
+        z-index: 1000;
+    }
+    .logOutOption:hover{
+        background-color: white;
+        color: black;
+        transition-duration: 300ms;
+    }
+    #logOutHead{margin-top: 30px; font-size: 23;}
+    #logOutSub{
+        height: 40px;
+    }
+
+</style>
+
+<html>
+    <head>
+
+    </head>
+    <body>
+        <div class="popUp" id="logoutPopUp">
+            <h3 id="logOutHead">Log Out</h3>
+            <p id="logOutSub">Are you sure you want to Log Out?</p>
+            <button id="logOutBtn" class="logOutOption">Yes, Log Out</button>
+            <button id="cancelBtn" class="logOutOption">Cancel</button>
+        </div>
+    </body>
+</html>

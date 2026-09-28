@@ -1,0 +1,70 @@
+<style>
+    *{
+        box-sizing: border-box;
+        
+    }
+    body{
+        background: url(images/Arcane.S01E04.Happy.Progress.Day01.42.png);
+        background-size: cover;
+        margin: 0;
+        font-family: 'Times New Roman';
+    }
+    /*ul{
+        font-size: 20px;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+    ul li{
+        float: left;
+        text-align: center;
+        width: 200px;
+        background-color: rgb(134, 113, 81);
+        opacity: 0.9;
+        line-height: 40px;
+    }
+    ul li a{
+        display: block;
+        text-decoration: none;
+        color: rgb(212, 212, 212);
+    }
+    ul li :hover{
+        color: rgb(46, 46, 45);
+    }
+    #hide{
+        display: none;
+    }
+    
+    #hide :hover #hide{
+        display: block;
+        background-color: aqua;
+    }*/
+    </style>
+    <html>
+        <title>
+            Create Account
+        </title>
+        <head>
+            <link rel="stylesheet" href="/Actual website/navigBarStyle.css">
+        </head>
+        <body >
+            <ul id="navBar" class="navUl">
+                <li class="mainList"><a href="/Profile/Home.html">Home</a></li>
+                <li class="mainList"><a href="">News</a></li>
+                <li class="mainList"><a href="">Announcement</a></li>
+                <li class="mainList"><a href="/Actual%20website/AboutUs/AboutUs.html">About Us</a></li>
+                <li class="mainList"><a href="/ContactUs/ContactUs.html" >Contact Us</a></li>
+                <li class="mainList"><a href="">Settings</a>
+                    <ul class="navUl">
+                        <li><a href="">User</a>
+                            <ul class="navUl">
+                                <li><a href="/Lists/List_Profile.html">Profile</a></li>
+                                <li><a href="/Lists/List_Schedule.html">Schedule</a></li>
+                                <li><a href="/Lists/List_User.html">Accounts</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </body>
+    </html>

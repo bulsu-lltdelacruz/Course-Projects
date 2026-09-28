@@ -1,0 +1,96 @@
+<style>
+    #container{
+        display: grid;
+        grid-template-columns: 100px auto;
+        margin-left: 10px;
+        width: 341px;
+        height: 200px;
+        
+    }
+    label{
+    margin-top: 4.5px;
+}
+*{
+    box-sizing: border-box;
+}
+body{
+    
+    background-image: url(images/Arcane.S01E04.Happy.Progress.Day01.42.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#parentContainer{
+    width: 360px;
+    height: 260px;
+    margin-left: 50%;
+    margin-top: 10%;
+    translate: -50%;
+    background-color: #c9bc94;
+    border-radius: 1.5%;
+}
+#childContainer{
+    display: grid;
+    grid-template-columns: 100px auto;
+    width: 500px;
+    height: 270px;
+    margin-left: 10px;
+}
+#buttonContainer{
+    width: 170px;
+    margin-left: 100px;
+    z-index: 1;
+}
+#childContainer > div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 240px;
+}
+.field{
+    width: 230px;
+    height: 30px;
+}
+.buttons{
+    width: 80px;
+    height: 30px;
+    cursor: pointer;
+    border-radius: 10%;
+}
+.radio{
+    width: 20px;
+    height: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+</style>
+<html>
+    <head>
+        <title>
+            Log In
+        </title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <form action="Profile/CreateProfile.html">
+            <div id="parentContainer">
+                <h3 style="margin-bottom: 30px;">Log In</h3>
+                <div id="container">
+                    <label for="">Username :</label>
+                    <input type="text" class="field">
+                    <label class="field">Password : </label>
+                    <input type="password" class="field">
+                    <div id="buttonContainer">
+                        <input type="submit" class="buttons">
+                        <button class="buttons"> cancel </button>
+                    </div>
+                    <div></div>
+                    <div id="buttonContainer">
+                        <a href="/Profile/CreateUser.html"> Create Account</a><br>
+                        <a href="/Profile/forgotPassword.html">Forgot Password</a>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </body>
+</html>

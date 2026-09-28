@@ -1,0 +1,50 @@
+*{
+    box-sizing: border-box;
+}
+#parentDiv{
+    padding-top: 40px;
+    margin-top: 0px;
+    margin-left: 50%;
+    translate: -50%;
+    z-index: 1;
+}
+body{
+    
+    background-image: url(/Profile/images/Arcane.S01E04.Happy.Progress.Day01.42.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+table, td,th{
+    padding-inline: 10px;
+    padding-block: 9px;
+    border-collapse: collapse;
+    background-color: white;
+    
+}
+td,th{
+    white-space:nowrap;
+    border: solid white 2px;
+}
+th{
+    color: white;
+    background-color: #313131;
+}
+.actionCol{
+    width: 200px;
+}
+.header{
+    
+    width: 785px;
+}
+tr:nth-child(odd){
+    background-color: #C3C3C3;
+}
+#addProfile{
+    width: 100px;
+    height: 25px;
+    float: right;
+}
+#tableDiv{
+    display: inline-block;
+    border: solid black 2px;
+}
