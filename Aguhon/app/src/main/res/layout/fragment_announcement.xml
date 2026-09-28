@@ -1,0 +1,133 @@
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="fragments.AccountsFragment">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="25dp"
+            android:paddingBottom="80dp">
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="30dp"/>
+
+            <TextView
+                style="@style/Base.Theme.Aguhan.Font.Header"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:text="Manage Announcement" />
+
+            <TextView
+                style="@style/Base.Theme.Aguhan.Font.SubHeader"
+                android:layout_weight="0.3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Select Grade level to manage announcement" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="20dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="top">
+
+                <LinearLayout
+                    android:id="@+id/llNursery"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/card"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/Base.Theme.Aguhan.Font.CardHeader"
+                        android:textColor="@color/accent"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Nursery"/>
+
+                    <TextView
+                        android:textColor="@color/muted"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="View Nursery Announcement." />
+
+                </LinearLayout>
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"/>
+
+                <LinearLayout
+                    android:id="@+id/llKinder"
+                    android:background="@drawable/card"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/Base.Theme.Aguhan.Font.CardHeader"
+                        android:textColor="@color/accent"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Kinder" />
+
+                    <TextView
+                        android:textColor="@color/muted"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="View Kinder Announcement." />
+                </LinearLayout>
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"/>
+
+                <LinearLayout
+                    android:id="@+id/llPrep"
+                    android:background="@drawable/card"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/Base.Theme.Aguhan.Font.CardHeader"
+                        android:textColor="@color/accent"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Prep" />
+
+                    <TextView
+                        android:textColor="@color/muted"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="View Prep Announcement." />
+                </LinearLayout>
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"/>
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="90dp"/>
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/background"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="25dp">
+
+        <ImageView
+            android:id="@+id/imgProfile"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@mipmap/ic_launcher_round"
+            android:scaleType="centerCrop"
+            android:padding="4dp" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp"/>
+
+        <TextView
+            android:id="@+id/txtAccountName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="s"
+            android:textAlignment="center"
+            android:theme="@style/Base.Theme.Aguhan.Font.Header" />
+
+        <TextView
+            android:id="@+id/txtAccountType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:text="Student Account"
+            android:textAlignment="center"
+            android:textColor="@color/muted"
+            android:theme="@style/Base.Theme.Aguhan.Font.SubHeader" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/card"
+            android:padding="16dp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingVertical="8dp">
+
+                <TextView
+                    style="@style/Base.Theme.Aguhan.Font.Label"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="Email"
+                    android:textColor="@color/muted" />
+
+                <TextView
+                    android:id="@+id/txtEmail"
+                    style="@style/Base.Theme.Aguhan.Font.SmallCardText"
+                    android:layout_width="0dp"
+                    android:layout_weight="1.5"
+                    android:layout_height="wrap_content"
+                    android:text="leo.lorenzo@example.com"
+                    android:textColor="@android:color/black"
+                    android:textAlignment="textEnd" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/muted" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingVertical="8dp">
+
+                <TextView
+                    style="@style/Base.Theme.Aguhan.Font.Label"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="Phone"
+                    android:textColor="@color/muted" />
+
+                <TextView
+                    android:id="@+id/txtPhoneNumber"
+                    style="@style/Base.Theme.Aguhan.Font.SmallCardText"
+                    android:layout_width="0dp"
+                    android:layout_weight="1.5"
+                    android:layout_height="wrap_content"
+                    android:text="09123456789"
+                    android:textColor="@android:color/black"
+                    android:textAlignment="textEnd" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/muted" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingVertical="8dp">
+
+                <TextView
+                    style="@style/Base.Theme.Aguhan.Font.Label"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="Username"
+                    android:textColor="@color/muted" />
+
+                <TextView
+                    android:id="@+id/txtUsername"
+                    style="@style/Base.Theme.Aguhan.Font.SmallCardText"
+                    android:layout_width="0dp"
+                    android:layout_weight="1.5"
+                    android:layout_height="wrap_content"
+                    android:text="leolorenzo"
+                    android:textColor="@android:color/black"
+                    android:textAlignment="textEnd" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/boder0"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/muted" />
+
+            <LinearLayout
+                android:id="@+id/gradeLevelParent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingVertical="8dp">
+
+                <TextView
+                    style="@style/Base.Theme.Aguhan.Font.Label"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="Grade Level"
+                    android:textColor="@color/muted" />
+
+                <TextView
+                    android:id="@+id/txtGradeLevel"
+                    style="@style/Base.Theme.Aguhan.Font.SmallCardText"
+                    android:layout_width="0dp"
+                    android:layout_weight="1.5"
+                    android:layout_height="wrap_content"
+                    android:text="Grade 10"
+                    android:textColor="@android:color/black"
+                    android:textAlignment="textEnd" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/boder1"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/muted" />
+            <LinearLayout
+                android:id="@+id/sectionParent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingVertical="8dp">
+
+                <TextView
+                    style="@style/Base.Theme.Aguhan.Font.Label"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="Section"
+                    android:textColor="@color/muted" />
+
+                <TextView
+                    android:id="@+id/txtSection"
+                    style="@style/Base.Theme.Aguhan.Font.SmallCardText"
+                    android:layout_width="0dp"
+                    android:layout_weight="1.5"
+                    android:layout_height="wrap_content"
+                    android:text="A"
+                    android:textColor="@android:color/black"
+                    android:textAlignment="textEnd" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/borderSection"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/muted" />
+
+            <LinearLayout
+                android:id="@+id/guardianNameparent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingVertical="8dp">
+
+                <TextView
+                    style="@style/Base.Theme.Aguhan.Font.Label"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="Guardian Name"
+                    android:textColor="@color/muted" />
+
+                <TextView
+                    android:id="@+id/txtGuardianName"
+                    style="@style/Base.Theme.Aguhan.Font.SmallCardText"
+                    android:layout_width="0dp"
+                    android:layout_weight="1.5"
+                    android:layout_height="wrap_content"
+                    android:text="guard"
+                    android:textColor="@android:color/black"
+                    android:textAlignment="textEnd" />
+            </LinearLayout>
+            <View
+                android:id="@+id/boder2"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/muted" />
+
+            <LinearLayout
+                android:id="@+id/guardianRelationparent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingVertical="8dp">
+
+                <TextView
+                    style="@style/Base.Theme.Aguhan.Font.Label"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="Guardian"
+                    android:textColor="@color/muted" />
+
+                <TextView
+                    android:id="@+id/txtGuardianRelation"
+                    style="@style/Base.Theme.Aguhan.Font.SmallCardText"
+                    android:layout_width="0dp"
+                    android:layout_weight="1.5"
+                    android:layout_height="wrap_content"
+                    android:text="parent"
+                    android:textColor="@android:color/black"
+                    android:textAlignment="textEnd" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp"/>
+
+        <Button
+            android:id="@+id/btnClose"
+            style="@style/Base.Theme.Aguhan.Font.Button"
+            android:background="@drawable/bg_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Close" />
+
+        <TextView
+            style="@style/Base.Theme.Aguhan.Font.Label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="" />
+    </LinearLayout>
+</ScrollView>

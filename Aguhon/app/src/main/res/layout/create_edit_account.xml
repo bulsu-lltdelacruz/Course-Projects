@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fillViewport="true"
+    android:background="@color/background"
+    tools:context="main.LoginActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="40dp" />
+        <ImageButton
+            android:id="@+id/btnBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:background="@color/transparent"
+            android:src="@drawable/back"
+            android:paddingStart="10dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/background"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="25dp">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="78dp"
+                android:layout_height="80dp"
+                android:src="@mipmap/logo" />
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="(CREATE/EDIT) Account"
+                android:theme="@style/Base.Theme.Aguhan.Font.Header" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:text="Please fill in the details to register."
+                android:theme="@style/Base.Theme.Aguhan.Font.SubHeader" />
+
+            <TextView
+                style="@style/Base.Theme.Aguhan.Font.Label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="First Name" />
+
+            <EditText
+                android:id="@+id/etFirstName"
+                style="@style/Base.Theme.Aguhan.Font.EditText"
+                android:background="@drawable/edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawablePadding="12dp"
+                android:ems="10"
+                android:hint="Enter your first name"
+                android:padding="12dp"/>
+            <TextView
+                style="@style/Base.Theme.Aguhan.Font.Label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Middle Name" />
+
+            <EditText
+                android:id="@+id/etMiddleName"
+                style="@style/Base.Theme.Aguhan.Font.EditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_text"
+                android:drawablePadding="12dp"
+                android:ems="10"
+                android:hint="Enter your middle name"
+                android:inputType="text"
+                android:padding="12dp" />
+
+            <TextView
+                style="@style/Base.Theme.Aguhan.Font.Label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Last Name" />
+
+            <EditText
+                android:id="@+id/etLastName"
+                style="@style/Base.Theme.Aguhan.Font.EditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_text"
+                android:drawablePadding="12dp"
+                android:ems="10"
+                android:hint="Enter your last name"
+                android:inputType="text"
+                android:padding="12dp" />
+            <TextView
+                android:id="@+id/label_grade_level"
+                style="@style/Base.Theme.Aguhan.Font.Label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Grade Level" />
+
+            <Spinner
+                android:id="@+id/spnGradeLevel"
+                style="@style/Base.Theme.Aguhan.Font.EditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_text"
+                android:ems="10"
+                android:inputType="text"
+                android:padding="12dp" />
+            <TextView
+                style="@style/Base.Theme.Aguhan.Font.Label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Email Address" />
+
+            <EditText
+                android:id="@+id/etEmail"
+                style="@style/Base.Theme.Aguhan.Font.EditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_text"
+                android:ems="10"
+                android:hint="Enter your email address"
+                android:inputType="textEmailAddress"
+                android:padding="12dp" />
+            <TextView
+                style="@style/Base.Theme.Aguhan.Font.Label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Phone Number" />
+
+            <EditText
+                android:id="@+id/etPhoneNumber"
+                style="@style/Base.Theme.Aguhan.Font.EditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_text"
+                android:ems="10"
+                android:hint="Enter your phone number"
+                android:inputType="number"
+                android:padding="12dp" />
+            <TextView
+                style="@style/Base.Theme.Aguhan.Font.Label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Username" />
+
+            <EditText
+                android:id="@+id/etUsername"
+                style="@style/Base.Theme.Aguhan.Font.EditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_text"
+                android:ems="10"
+                android:hint="Create a username"
+                android:padding="12dp" />
+            <TextView
+                style="@style/Base.Theme.Aguhan.Font.Label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Password" />
+
+            <EditText
+                android:id="@+id/etPassword"
+                style="@style/Base.Theme.Aguhan.Font.EditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_text"
+                android:drawableEnd="@drawable/icon_eye"
+                android:drawablePadding="12dp"
+                android:ems="10"
+                android:hint="Create your password"
+                android:inputType="textPassword"
+                android:padding="12dp" />
+            <TextView
+                style="@style/Base.Theme.Aguhan.Font.Label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Confirm Password" />
+
+            <EditText
+                android:id="@+id/etConfirmPassword"
+                style="@style/Base.Theme.Aguhan.Font.EditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_text"
+                android:drawableEnd="@drawable/icon_eye"
+                android:drawablePadding="12dp"
+                android:ems="10"
+                android:hint="Confirm your password"
+                android:inputType="textPassword"
+                android:padding="12dp" />
+
+            <Space
+                android:id="@+id/imgSpace1"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"/>
+            <ImageView
+                android:id="@+id/imgProfile"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:scaleType="centerCrop"
+                android:padding="4dp"
+                android:visibility="gone"
+                android:contentDescription="Profile Photo" />
+
+            <Space
+                android:id="@+id/imgSpace2"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:visibility="gone"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal"
+                android:layout_gravity="center">
+
+                <Button
+                    android:id="@+id/btnTakePhoto"
+                    style="@style/Base.Theme.Aguhan.Font.Button"
+                    android:background="@drawable/bg_button"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="13sp"
+                    android:layout_weight="1"
+                    android:text="Take Photo" />
+                <Space
+                    android:layout_width="10dp"
+                    android:layout_height="match_parent"/>
+                <Button
+                    android:id="@+id/btnChoosePhoto"
+                    style="@style/Base.Theme.Aguhan.Font.Button"
+                    android:background="@drawable/bg_button"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="13sp"
+                    android:layout_weight="1"
+                    android:text="Choose Photo" />
+
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="20dp"/>
+
+            <Button
+                android:id="@+id/btnCommit"
+                style="@style/Base.Theme.Aguhan.Font.Button"
+                android:background="@drawable/bg_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Submit" />
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="20dp"/>
+            <Button
+                android:id="@+id/btnCancel"
+                style="@style/Base.Theme.Aguhan.Font.CancelButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_cancel"
+                android:textColor="@color/muted"
+                android:text="Cancel" />
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="25dp"/>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

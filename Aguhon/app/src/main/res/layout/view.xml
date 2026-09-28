@@ -1,0 +1,145 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="fragments.AccountsFragment">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="40dp" />
+        <ImageButton
+            android:id="@+id/btnBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:background="@color/transparent"
+            android:src="@drawable/back"
+            android:paddingStart="10dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="25dp">
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+
+            <TextView
+                android:id="@+id/head"
+                style="@style/Base.Theme.Aguhan.Font.Header"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:text="Manage (INSERT) Accounts" />
+
+            <TextView
+                style="@style/Base.Theme.Aguhan.Font.SubHeader"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:text="Your portal for academic successs and community engagement" />
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="30dp" />
+
+            <LinearLayout
+                android:id="@+id/llView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/card"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/Base.Theme.Aguhan.Font.CardHeader"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/icon_view"
+                    android:drawablePadding="10dp"
+                    android:text="View"
+                    android:textColor="@color/accent" />
+
+                <TextView
+                    android:id="@+id/viewSubtext"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="View (INSERT) Accounts."
+                    android:textColor="@color/muted" />
+            </LinearLayout>
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="top"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/llEdit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/card"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/Base.Theme.Aguhan.Font.CardHeader"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:drawableLeft="@drawable/icon_edit"
+                        android:drawablePadding="10dp"
+                        android:text="Edit"
+                        android:textColor="@color/accent" />
+
+                    <TextView
+                        android:id="@+id/editSubtext"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="View (INSERT) Accounts."
+                        android:textColor="@color/muted" />
+                </LinearLayout>
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp" />
+
+                <LinearLayout
+                    android:id="@+id/llDelete"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/card"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/Base.Theme.Aguhan.Font.CardHeader"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/icon_delete"
+                        android:drawablePadding="10dp"
+                        android:text="Delete"
+                        android:textColor="@color/accent" />
+
+                    <TextView
+                        android:id="@+id/deleteSubtext"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="View (INSERT) Accounts."
+                        android:textColor="@color/muted" />
+                </LinearLayout>
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</ScrollView>

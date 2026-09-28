@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fillViewport="true">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="40dp" />
+        <ImageButton
+            android:id="@+id/btnBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:background="@color/transparent"
+            android:src="@drawable/back"
+            android:paddingStart="10dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/background"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="25dp">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="78dp"
+                android:layout_height="80dp"
+                android:src="@mipmap/logo" />
+
+            <TextView
+                android:id="@+id/txtHistoryTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Transaction History"
+                android:theme="@style/Base.Theme.Aguhan.Font.Header" />
+
+            <TextView
+                android:id="@+id/txtHistorySubtitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:text="Review changes made by administrators"
+                android:theme="@style/Base.Theme.Aguhan.Font.SubHeader" />
+
+            <!-- Admin Info -->
+            <TextView
+                style="@style/Base.Theme.Aguhan.Font.Label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Admin Name" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/edit_text"
+                android:padding="12dp">
+
+                <TextView
+                    android:id="@+id/txtAdminName"
+                    style="@style/Base.Theme.Aguhan.Font.EditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Leo Lorenzo"
+                    android:textColor="@android:color/black" />
+            </LinearLayout>
+
+            <TextView
+                style="@style/Base.Theme.Aguhan.Font.Label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Timestamp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/edit_text"
+                android:padding="12dp">
+
+                <TextView
+                    android:id="@+id/txtTimestamp"
+                    style="@style/Base.Theme.Aguhan.Font.EditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="November 9, 2025 - 10:30 AM"
+                    android:textColor="@color/muted" />
+            </LinearLayout>
+
+            <TextView
+                style="@style/Base.Theme.Aguhan.Font.Label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Action Performed" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/edit_text"
+                android:padding="12dp">
+
+                <TextView
+                    android:id="@+id/txtActionType"
+                    style="@style/Base.Theme.Aguhan.Font.EditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="EDIT"
+                    android:textColor="#FFA500"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <TextView
+                style="@style/Base.Theme.Aguhan.Font.Label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Item Type" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/edit_text"
+                android:padding="12dp">
+
+                <TextView
+                    android:id="@+id/txtViewType"
+                    style="@style/Base.Theme.Aguhan.Font.EditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="ACCOUNT"
+                    android:textColor="@android:color/black" />
+            </LinearLayout>
+
+            <TextView
+                style="@style/Base.Theme.Aguhan.Font.Label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Item Modified" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/edit_text"
+                android:padding="12dp">
+
+                <TextView
+                    android:id="@+id/txtItemModified"
+                    style="@style/Base.Theme.Aguhan.Font.EditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Student Account - John Doe"
+                    android:textColor="@android:color/black" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/lblStateBefore"
+                style="@style/Base.Theme.Aguhan.Font.Label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="State Before Change"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/containerStateBefore"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/edit_text"
+                android:padding="16dp"
+                android:visibility="gone">
+                <ImageView
+                    android:src="@mipmap/ic_launcher_round"
+                    android:id="@+id/imgProfileBefore"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center"/>
+
+                <TextView
+                    android:id="@+id/txtStateBefore"
+                    style="@style/Base.Theme.Aguhan.Font.EditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Previous state data"
+                    android:textColor="#CC0000"
+                    android:lineSpacingExtra="4dp"
+                    android:fontFamily="monospace" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/lblStateAfter"
+                style="@style/Base.Theme.Aguhan.Font.Label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="State After Change"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/containerStateAfter"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/edit_text"
+                android:padding="16dp"
+                android:visibility="gone">
+                <ImageView
+                    android:src="@mipmap/ic_launcher_round"
+                    android:id="@+id/imgProfileAfter"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center"/>
+
+
+                <TextView
+                    android:id="@+id/txtStateAfter"
+                    style="@style/Base.Theme.Aguhan.Font.EditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="New state data"
+                    android:textColor="#008000"
+                    android:lineSpacingExtra="4dp"
+                    android:fontFamily="monospace" />
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="20dp"/>
+
+            <LinearLayout
+                android:id="@+id/containerActionButtons"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:visibility="gone">
+
+                <Button
+                    android:id="@+id/btnUndo"
+                    style="@style/Base.Theme.Aguhan.Font.Button"
+                    android:background="@drawable/bg_button"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginEnd="8dp"
+                    android:text="Undo \nChange"
+                    android:textSize="13sp"
+                    android:backgroundTint="#FF6B6B" />
+                <Space
+                    android:layout_width="10dp"
+                    android:layout_height="match_parent"/>
+
+                <Button
+                    android:id="@+id/btnDeletePermanent"
+                    style="@style/Base.Theme.Aguhan.Font.Button"
+                    android:background="@drawable/bg_button"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginStart="8dp"
+                    android:textSize="13sp"
+                    android:text="Delete \nPermanently"
+                    android:backgroundTint="#DC143C" />
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="10dp"/>
+
+            <Button
+                android:id="@+id/btnClose"
+                style="@style/Base.Theme.Aguhan.Font.Button"
+                android:background="@drawable/bg_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Close" />
+
+            <TextView
+                style="@style/Base.Theme.Aguhan.Font.Label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:orientation="vertical"
+    android:background="@color/background"
+    tools:context="main.CreateEditScheduleActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="40dp" />
+
+    <ImageButton
+        android:id="@+id/btnBack"
+        android:layout_width="wrap_content"
+        android:layout_height="26dp"
+        android:layout_gravity="start"
+        android:background="@color/transparent"
+        android:src="@drawable/back"
+        android:paddingStart="10dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/background"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="25dp">
+
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="78dp"
+                android:layout_height="80dp"
+                android:src="@mipmap/logo" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Create Schedule"
+                android:theme="@style/Base.Theme.Aguhan.Font.Header" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:text="Please fill in the details to create a schedule."
+                android:theme="@style/Base.Theme.Aguhan.Font.SubHeader" />
+
+            <TextView
+                style="@style/Base.Theme.Aguhan.Font.Label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Teacher"
+                android:paddingTop="13dp"/>
+
+            <Spinner
+                android:id="@+id/spnTeacher"
+                style="@style/Base.Theme.Aguhan.Font.EditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_text"
+                android:drawablePadding="12dp"
+                android:ems="10"
+                android:hint="Enter subject name"
+                android:inputType="text"
+                android:padding="12dp" />
+            <TextView
+                style="@style/Base.Theme.Aguhan.Font.Label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Section"
+                android:paddingTop="13dp"/>
+
+            <Spinner
+                android:id="@+id/spnSection"
+                style="@style/Base.Theme.Aguhan.Font.EditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_text"
+                android:drawablePadding="12dp"
+                android:ems="10"
+                android:hint="Enter subject name"
+                android:inputType="text"
+                android:padding="12dp" />
+
+            <TextView
+                style="@style/Base.Theme.Aguhan.Font.Label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Subject"
+                android:paddingTop="13dp"/>
+
+            <Spinner
+                android:id="@+id/spnSubject"
+                style="@style/Base.Theme.Aguhan.Font.EditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_text"
+                android:drawablePadding="12dp"
+                android:ems="10"
+                android:hint="Enter subject name"
+                android:inputType="text"
+                android:padding="12dp" />
+
+            <TextView
+                style="@style/Base.Theme.Aguhan.Font.Label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Schedule Start"
+                android:paddingTop="13dp"/>
+
+            <EditText
+                android:id="@+id/etScheduleStart"
+                style="@style/Base.Theme.Aguhan.Font.EditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_text"
+                android:clickable="true"
+                android:drawablePadding="12dp"
+                android:ems="10"
+                android:focusable="false"
+                android:hint="Select start time"
+                android:padding="12dp" />
+
+            <TextView
+                style="@style/Base.Theme.Aguhan.Font.Label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Schedule End"
+                android:paddingTop="13dp" />
+
+            <EditText
+                android:id="@+id/etScheduleEnd"
+                style="@style/Base.Theme.Aguhan.Font.EditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_text"
+                android:clickable="true"
+                android:ems="10"
+                android:focusable="false"
+                android:hint="Select end time"
+                android:padding="12dp" />
+
+            <TextView
+                style="@style/Base.Theme.Aguhan.Font.Label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Days of Week"
+                android:paddingTop="13dp"/>
+
+            <LinearLayout
+                android:id="@+id/cbParent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_text"
+                android:orientation="vertical"
+                android:padding="12dp">
+
+                <CheckBox
+                    android:id="@+id/cbMonday"
+                    style="@style/Base.Theme.Aguhan.Font.EditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Monday" />
+
+                <CheckBox
+                    android:id="@+id/cbTuesday"
+                    style="@style/Base.Theme.Aguhan.Font.EditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Tuesday" />
+
+                <CheckBox
+                    android:id="@+id/cbWednesday"
+                    style="@style/Base.Theme.Aguhan.Font.EditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Wednesday" />
+
+                <CheckBox
+                    android:id="@+id/cbThursday"
+                    style="@style/Base.Theme.Aguhan.Font.EditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Thursday" />
+
+                <CheckBox
+                    android:id="@+id/cbFriday"
+                    style="@style/Base.Theme.Aguhan.Font.EditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Friday" />
+
+                <CheckBox
+                    android:id="@+id/cbSaturday"
+                    style="@style/Base.Theme.Aguhan.Font.EditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Saturday" />
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+
+            <Button
+                android:id="@+id/btnCreateSchedule"
+                style="@style/Base.Theme.Aguhan.Font.Button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_button"
+                android:text="Create Schedule" />
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="20dp"/>
+            <Button
+                android:id="@+id/btnCancel"
+                style="@style/Base.Theme.Aguhan.Font.CancelButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_cancel"
+                android:textColor="@color/muted"
+                android:text="Cancel" />
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="25dp"/>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

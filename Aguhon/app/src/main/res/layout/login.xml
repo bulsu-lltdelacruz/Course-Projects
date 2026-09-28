@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fillViewport="true"
+    tools:context="main.LoginActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/background"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="25dp">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="78dp"
+            android:layout_height="80dp"
+            android:src="@mipmap/logo" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Welcome Back!"
+            android:theme="@style/Base.Theme.Aguhan.Font.Header" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:text="Sign in to manage school activities"
+            android:theme="@style/Base.Theme.Aguhan.Font.SubHeader" />
+
+        <TextView
+            android:id="@+id/textView"
+            style="@style/Base.Theme.Aguhan.Font.Label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Username" />
+
+        <EditText
+            android:id="@+id/etUsername"
+            style="@style/Base.Theme.Aguhan.Font.EditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit_text"
+            android:drawableStart="@drawable/icon_person"
+            android:drawablePadding="12dp"
+            android:ems="10"
+            android:hint="Username"
+            android:padding="12dp" />
+
+        <TextView
+            android:id="@+id/textView2"
+            style="@style/Base.Theme.Aguhan.Font.Label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Password" />
+
+        <EditText
+            android:id="@+id/etPassword"
+            style="@style/Base.Theme.Aguhan.Font.EditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit_text"
+            android:drawableStart="@drawable/padlock"
+            android:drawableEnd="@drawable/icon_eye"
+            android:drawablePadding="12dp"
+            android:ems="10"
+            android:hint="Enter your password"
+            android:inputType="textPassword"
+            android:padding="12dp" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="40dp"/>
+
+        <Button
+            android:id="@+id/btnLogin"
+            style="@style/Base.Theme.Aguhan.Font.Button"
+            android:background="@drawable/bg_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Log In" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="" />
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,22 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_home"
+        android:icon="@drawable/icon_house"
+        android:title="Dashboard" />
+    <item
+        android:id="@+id/nav_account"
+        android:icon="@drawable/icon_person_focused"
+        android:title="Accounts" />
+    <item
+        android:id="@+id/nav_schedule"
+        android:icon="@drawable/icon_calendar_focused"
+        android:title="Schedule" />
+    <item
+        android:id="@+id/nav_announcement"
+        android:icon="@drawable/icon_alarm_focused"
+        android:title="Announcement" />
+    <item
+        android:id="@+id/nav_history"
+        android:icon="@drawable/icon_history"
+        android:title="History" />
+</menu>

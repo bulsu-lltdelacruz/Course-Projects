@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@color/white"
+    tools:context="main.CreateAnnouncementActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="40dp" />
+        <ImageButton
+            android:id="@+id/btnBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:background="@color/transparent"
+            android:src="@drawable/back"
+            android:paddingStart="10dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="25dp">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="78dp"
+                android:layout_height="80dp"
+                android:src="@mipmap/logo" />
+
+            <TextView
+                android:id="@+id/tvAnnouncementTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="(CREATE/EDIT) Announcement"
+                android:theme="@style/Base.Theme.Aguhan.Font.Header" />
+
+            <TextView
+                android:id="@+id/txtView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:text="Fill in the details to create Announcement."
+                android:theme="@style/Base.Theme.Aguhan.Font.SubHeader" />
+
+            <TextView
+                style="@style/Base.Theme.Aguhan.Font.Label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Announcement Title" />
+
+            <EditText
+                android:id="@+id/etAnnouncementTitle"
+                style="@style/Base.Theme.Aguhan.Font.EditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_text"
+                android:hint="Enter announcement title"
+                android:padding="12dp"
+                android:inputType="textCapSentences" />
+
+            <TextView
+                style="@style/Base.Theme.Aguhan.Font.Label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Announcement Date" />
+
+            <EditText
+                android:id="@+id/etAnnouncementDate"
+                style="@style/Base.Theme.Aguhan.Font.EditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_text"
+                android:hint="Select date"
+                android:focusable="false"
+                android:clickable="true"
+                android:padding="12dp"
+                android:drawableEnd="@drawable/icon_calendar"
+                android:drawablePadding="12dp" />
+
+            <TextView
+                style="@style/Base.Theme.Aguhan.Font.Label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Announcement Time" />
+
+            <EditText
+                android:id="@+id/etAnnouncementTime"
+                style="@style/Base.Theme.Aguhan.Font.EditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_text"
+                android:hint="Select time"
+                android:focusable="false"
+                android:clickable="true"
+                android:padding="12dp"
+                android:drawableEnd="@drawable/icon_alarm"
+                android:drawablePadding="12dp" />
+
+            <TextView
+                style="@style/Base.Theme.Aguhan.Font.Label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Target Grades" />
+
+            <LinearLayout
+                android:id="@+id/cbParentGrades"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/cbNursery"
+                    style="@style/Base.Theme.Aguhan.Font.SubHeader"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nursery" />
+
+                <CheckBox
+                    android:id="@+id/cbKinder"
+                    style="@style/Base.Theme.Aguhan.Font.SubHeader"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:text="Kinder" />
+
+                <CheckBox
+                    android:id="@+id/cbPrep"
+                    style="@style/Base.Theme.Aguhan.Font.SubHeader"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:text="Prep" />
+            </LinearLayout>
+
+            <TextView
+                style="@style/Base.Theme.Aguhan.Font.Label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Announcement Details" />
+
+            <EditText
+                android:id="@+id/etAnnouncementDetails"
+                style="@style/Base.Theme.Aguhan.Font.EditText"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="@drawable/edit_text"
+                android:gravity="top|start"
+                android:hint="Write your announcement here..."
+                android:inputType="textMultiLine"
+                android:padding="12dp" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+
+            <Button
+                android:id="@+id/btnCommitAnnouncement"
+                style="@style/Base.Theme.Aguhan.Font.Button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_button"
+                android:text="Publish Announcement" />
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="20dp"/>
+            <Button
+                android:id="@+id/btnCancel"
+                style="@style/Base.Theme.Aguhan.Font.CancelButton"
+                android:background="@drawable/bg_cancel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/muted"
+                android:text="Cancel" />
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

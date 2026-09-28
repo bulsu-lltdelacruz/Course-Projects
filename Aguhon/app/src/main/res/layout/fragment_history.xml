@@ -1,0 +1,192 @@
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="fragments.HistoryFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="25dp">
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp"/>
+
+        <TextView
+            android:id="@+id/title"
+            style="@style/Base.Theme.Aguhan.Font.Header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Activity History"
+            android:textSize="27sp"
+            android:paddingBottom="10dp" />
+
+        <TextView
+            style="@style/TextAppearance.AppCompat.Subhead"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Click the records for more actions"
+            android:paddingBottom="10dp"/>
+
+        <TextView
+            style="@style/Base.Theme.Aguhan.Font.SubHeader"
+            android:textAlignment="textStart"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Filter By"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:paddingBottom="10dp">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_marginEnd="8dp">
+
+                <TextView
+                    style="@style/Base.Theme.Aguhan.Font.Label"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Activity Type"
+                    android:textSize="14sp" />
+                <Spinner
+                    android:id="@+id/spnActivityType"
+                    style="@style/Base.Theme.Aguhan.Font.EditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edit_text"
+                    android:padding="0dp"/>
+            </LinearLayout>
+
+            <Space
+                android:layout_width="10dp"
+                android:layout_height="match_parent" />
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_marginStart="8dp">
+
+                <TextView
+                    style="@style/Base.Theme.Aguhan.Font.Label"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Transaction Type"
+                    android:textSize="14sp" />
+
+                <Spinner
+                    android:id="@+id/spnTransactionType"
+                    style="@style/Base.Theme.Aguhan.Font.EditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edit_text"
+                    android:padding="0dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Legend -->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Create: "
+                android:layout_gravity="center"/>
+            <View
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:background="@drawable/square_green"
+                android:layout_gravity="center"/>
+            <TextView
+                android:paddingStart="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Update: "
+                android:layout_gravity="center"/>
+            <View
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:background="@drawable/square_orange"
+                android:layout_gravity="center"/>
+            <TextView
+                android:paddingStart="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Delete: "
+                android:layout_gravity="center"/>
+            <View
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:background="@drawable/square_red"
+                android:layout_gravity="center"/>
+        </LinearLayout>
+
+        <!-- Table -->
+        <TableLayout
+            android:id="@+id/table"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/card"
+            android:padding="0dp"
+            android:stretchColumns="2">
+
+            <TableRow
+                android:id="@+id/table_head"
+                android:background="@drawable/bg_table_header"
+                android:paddingVertical="10dp"
+                android:paddingHorizontal="16dp">
+
+                <TextView
+                    style="@style/Base.Theme.Aguhan.Font.SmallCardHeader"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="Date"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:textAlignment="center" />
+
+                <TextView
+                    style="@style/Base.Theme.Aguhan.Font.SmallCardHeader"
+                    android:layout_width="0dp"
+                    android:layout_weight="1.5"
+                    android:text="Activity"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:textAlignment="center" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/emptyPlaceholder"
+                android:paddingHorizontal="16dp"
+                android:paddingVertical="12dp">
+
+                <TextView
+                    style="@style/Base.Theme.Aguhan.Font.SmallCardHeader"
+                    android:layout_width="0dp"
+                    android:layout_weight="3"
+                    android:textColor="@color/muted"
+                    android:text="No Records to show"
+                    android:textStyle="bold"
+                    android:textAlignment="center"/>
+            </TableRow>
+        </TableLayout>
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="90dp"/>
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

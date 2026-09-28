@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fillViewport="true"
+    tools:context="main.ScheduleViewActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/background"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="25dp">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="78dp"
+            android:layout_height="80dp"
+            android:src="@mipmap/logo" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp"/>
+
+        <TextView
+            android:id="@+id/txtScheduleTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Schedule Details"
+            android:textAlignment="center"
+            android:theme="@style/Base.Theme.Aguhan.Font.Header" />
+
+        <TextView
+            android:id="@+id/txtGradeSection"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:text="Grade 10 - Section A"
+            android:textAlignment="center"
+            android:textColor="@color/muted"
+            android:theme="@style/Base.Theme.Aguhan.Font.SubHeader" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/card"
+            android:padding="16dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingVertical="8dp">
+
+                <TextView
+                    style="@style/Base.Theme.Aguhan.Font.Label"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="Section"
+                    android:textColor="@color/muted" />
+
+                <TextView
+                    android:id="@+id/txtSection"
+                    style="@style/Base.Theme.Aguhan.Font.SmallCardText"
+                    android:layout_width="0dp"
+                    android:layout_weight="1.5"
+                    android:layout_height="wrap_content"
+                    android:text="A"
+                    android:textColor="@android:color/black"
+                    android:textAlignment="textEnd" />
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/muted" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingVertical="8dp">
+
+                <TextView
+                    style="@style/Base.Theme.Aguhan.Font.Label"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="Subject"
+                    android:textColor="@color/muted" />
+
+                <TextView
+                    android:id="@+id/txtSubject"
+                    style="@style/Base.Theme.Aguhan.Font.SmallCardText"
+                    android:layout_width="0dp"
+                    android:layout_weight="1.5"
+                    android:layout_height="wrap_content"
+                    android:text="Mathematics"
+                    android:textColor="@android:color/black"
+                    android:textAlignment="textEnd" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/muted" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingVertical="8dp">
+
+                <TextView
+                    style="@style/Base.Theme.Aguhan.Font.Label"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="Teacher"
+                    android:textColor="@color/muted" />
+
+                <TextView
+                    android:id="@+id/txtTeacher"
+                    style="@style/Base.Theme.Aguhan.Font.SmallCardText"
+                    android:layout_width="0dp"
+                    android:layout_weight="1.5"
+                    android:layout_height="wrap_content"
+                    android:text="Mr. Dela Cruz"
+                    android:textColor="@android:color/black"
+                    android:textAlignment="textEnd" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/muted" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingVertical="8dp">
+
+                <TextView
+                    style="@style/Base.Theme.Aguhan.Font.Label"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="Grade Level"
+                    android:textColor="@color/muted" />
+
+                <TextView
+                    android:id="@+id/txtGradeLevel"
+                    style="@style/Base.Theme.Aguhan.Font.SmallCardText"
+                    android:layout_width="0dp"
+                    android:layout_weight="1.5"
+                    android:layout_height="wrap_content"
+                    android:text="Grade 10"
+                    android:textColor="@android:color/black"
+                    android:textAlignment="textEnd" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/muted" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingVertical="8dp">
+
+                <TextView
+                    style="@style/Base.Theme.Aguhan.Font.Label"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="Start Time"
+                    android:textColor="@color/muted" />
+
+                <TextView
+                    android:id="@+id/txtTimeStart"
+                    style="@style/Base.Theme.Aguhan.Font.SmallCardText"
+                    android:layout_width="0dp"
+                    android:layout_weight="1.5"
+                    android:layout_height="wrap_content"
+                    android:text="10:00 AM"
+                    android:textColor="@android:color/black"
+                    android:textAlignment="textEnd" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/muted" />
+
+            <!-- Time End -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingVertical="8dp">
+
+                <TextView
+                    style="@style/Base.Theme.Aguhan.Font.Label"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="End Time"
+                    android:textColor="@color/muted" />
+
+                <TextView
+                    android:id="@+id/txtTimeEnd"
+                    style="@style/Base.Theme.Aguhan.Font.SmallCardText"
+                    android:layout_width="0dp"
+                    android:layout_weight="1.5"
+                    android:layout_height="wrap_content"
+                    android:text="1:00 PM"
+                    android:textColor="@android:color/black"
+                    android:textAlignment="textEnd" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/muted" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingVertical="8dp">
+
+                <TextView
+                    style="@style/Base.Theme.Aguhan.Font.Label"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="Days"
+                    android:textColor="@color/muted" />
+
+                <TextView
+                    android:id="@+id/txtDays"
+                    style="@style/Base.Theme.Aguhan.Font.SmallCardText"
+                    android:layout_width="0dp"
+                    android:layout_weight="1.5"
+                    android:layout_height="wrap_content"
+                    android:text="Mon, Wed, Fri"
+                    android:textColor="@android:color/black"
+                    android:textAlignment="textEnd" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp"/>
+
+        <Button
+            android:id="@+id/btnClose"
+            style="@style/Base.Theme.Aguhan.Font.Button"
+            android:background="@drawable/bg_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Close" />
+
+        <TextView
+            style="@style/Base.Theme.Aguhan.Font.Label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="" />
+    </LinearLayout>
+</ScrollView>

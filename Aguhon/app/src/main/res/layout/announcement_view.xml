@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fillViewport="true">
+
+   <!-- <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/background"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="40dp">
+
+        <TextView
+            android:id="@+id/txtAnnouncementTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Announcement Title"
+            android:theme="@style/Base.Theme.Aguhan.Font.Header" />
+
+        <TextView
+            android:id="@+id/txtAnnouncementDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:text="November 9, 2025"
+            android:textColor="@color/muted"
+            android:theme="@style/Base.Theme.Aguhan.Font.SubHeader" />
+
+        <TextView
+            style="@style/Base.Theme.Aguhan.Font.Label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Announcement Details" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/edit_text"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/txtAnnouncementDetail"
+                style="@style/Base.Theme.Aguhan.Font.EditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="This is the detailed content of the announcement. It contains all the important information that needs to be communicated to students, parents, and teachers. The announcement can be as long as needed to convey the complete message."
+                android:textColor="@android:color/black"
+                android:lineSpacingExtra="4dp" />
+
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp"/>
+
+        <Button
+            android:id="@+id/btnClose"
+            style="@style/Base.Theme.Aguhan.Font.Button"
+            android:background="@drawable/bg_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Close" />
+
+        <TextView
+            style="@style/Base.Theme.Aguhan.Font.Label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="" />
+    </LinearLayout>-->
+</ScrollView>

@@ -1,0 +1,138 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="main.AccountDetailsActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="40dp" />
+            <ImageButton
+                android:id="@+id/btnBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:background="@color/transparent"
+                android:src="@drawable/back"
+                android:paddingStart="10dp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="25dp"
+                android:paddingBottom="80dp">
+                <Space
+                android:layout_width="match_parent"
+                android:layout_height="8dp" />
+
+                <TextView
+                    android:id="@+id/title"
+                    style="@style/Base.Theme.Aguhan.Font.Header"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="10dp"
+                    android:text="(INSERT) Accounts"
+                    android:layout_gravity="center"
+                    android:textSize="27sp" />
+                <TextView
+                    style="@style/TextAppearance.AppCompat.Subhead"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Click the records for more actions"
+                    android:paddingBottom="10dp"
+                    android:textAlignment="center"/>
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp" />
+
+                <TableLayout
+                    android:id="@+id/table"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/card"
+                    android:padding="0dp"
+                    android:stretchColumns="2">
+
+                    <TableRow
+                        android:background="@drawable/bg_table_header"
+                        android:paddingHorizontal="16dp"
+                        android:paddingVertical="12dp">
+
+                        <TextView
+                            style="@style/Base.Theme.Aguhan.Font.SmallCardHeader"
+                            android:layout_width="0dp"
+                            android:layout_weight="2"
+                            android:text="Name"
+                            android:textAlignment="textStart"
+                            android:textColor="@color/white"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/gradeTv"
+                            style="@style/Base.Theme.Aguhan.Font.SmallCardHeader"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:text="Grade"
+                            android:textAlignment="center"
+                            android:textColor="@color/white"
+                            android:textStyle="bold" />
+                        <TextView
+                            android:id="@+id/sectionTv"
+                            style="@style/Base.Theme.Aguhan.Font.SmallCardHeader"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:text="Section"
+                            android:textAlignment="center"
+                            android:textColor="@color/white"
+                            android:textStyle="bold" />
+                    </TableRow>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/muted" />
+                    <TableRow
+                        android:id="@+id/emptyPlaceholder"
+                        android:paddingHorizontal="16dp"
+                        android:paddingVertical="12dp">
+
+                        <TextView
+                            style="@style/Base.Theme.Aguhan.Font.SmallCardHeader"
+                            android:layout_width="0dp"
+                            android:layout_weight="3"
+                            android:textColor="@color/muted"
+                            android:text="No Records to show"
+                            android:textStyle="bold"
+                            android:textAlignment="center"/>
+                    </TableRow>
+                </TableLayout>
+                <Space
+                android:layout_width="match_parent"
+                android:layout_height="90dp"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="16dp"
+        android:contentDescription="Add Account"
+        app:srcCompat="@android:drawable/ic_input_add"
+        app:backgroundTint="@color/accent"
+        app:tint="@color/white" />
+
+</FrameLayout>

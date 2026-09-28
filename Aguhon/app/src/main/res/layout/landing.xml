@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fillViewport="true"
+    tools:context="main.LoginActivity">
+    <!--<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/background"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="25dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            >
+
+            <ImageView
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                app:srcCompat="@mipmap/logo" />
+
+            <TextView
+                style="@style/Base.Theme.Aguhan.Font.Header"
+                android:textSize="34sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="3dp"
+                android:text="Aguhon"
+                android:textColor="@color/accent" />
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="15dp"/>
+        <TextView
+            style="@style/Base.Theme.Aguhan.Font.Header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3"
+            android:text="Welcome to Aguhon Student Portal App" />
+
+        <TextView
+            style="@style/Base.Theme.Aguhan.Font.SubHeader"
+            android:layout_weight="0.3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Your portal for academic successs and community engagement" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="top">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/card"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/Base.Theme.Aguhan.Font.CardHeader"
+                    android:textColor="@color/accent"
+                    android:drawableLeft="@drawable/accent_person"
+                    android:drawablePadding="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Accounts"/>
+
+                <TextView
+                    android:textColor="@color/muted"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Access your student, parent, or staff portal." />
+            </LinearLayout>
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="20dp"/>
+            <LinearLayout
+                android:background="@drawable/card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/Base.Theme.Aguhan.Font.CardHeader"
+                    android:textColor="@color/accent"
+                    android:drawableLeft="@drawable/icon_calendar_focused"
+                    android:drawablePadding="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Schedules" />
+
+                <TextView
+                    android:textColor="@color/muted"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Create an account to access portal." />
+            </LinearLayout>
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="20dp"/>
+            <LinearLayout
+                android:background="@drawable/card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/Base.Theme.Aguhan.Font.CardHeader"
+                    android:textColor="@color/accent"
+                    android:drawableLeft="@drawable/icon_alarm_focused"
+                    android:drawablePadding="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Announcements" />
+
+                <TextView
+                    android:textColor="@color/muted"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Join our community. Information for new
+students." />
+            </LinearLayout>
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="20dp"/>
+            <LinearLayout
+                android:background="@drawable/card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/Base.Theme.Aguhan.Font.CardHeader"
+                    android:textColor="@color/accent"
+                    android:drawableLeft="@drawable/icon_history"
+                    android:drawablePadding="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="History" />
+
+                <TextView
+                    android:textColor="@color/muted"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Join our community. Information for new
+students." />
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>-->
+
+</ScrollView>
